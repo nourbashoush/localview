@@ -1,0 +1,184 @@
+{
+  "ext_name": {
+    "message": "LocalView for Google™"
+  },
+  "action_title": {
+    "message": "LocalView"
+  },
+  "option_default": {
+    "message": "Google-standaard"
+  },
+  "label_interface_language": {
+    "message": "Weergavetaal"
+  },
+  "label_results_language": {
+    "message": "Taal van resultaten"
+  },
+  "label_region": {
+    "message": "Regio"
+  },
+  "button_apply": {
+    "message": "Toepassen"
+  },
+  "button_reset": {
+    "message": "Resetten"
+  },
+  "status_reloading": {
+    "message": "Toegepast. Opnieuw laden…"
+  },
+  "status_applied": {
+    "message": "Toegepast."
+  },
+  "status_reset": {
+    "message": "Teruggezet naar Google-standaard."
+  },
+  "status_failed": {
+    "message": "Kan je instellingen niet opslaan."
+  },
+  "status_saved": {
+    "message": "Opgeslagen."
+  },
+  "options_products_title": {
+    "message": "Producten"
+  },
+  "options_products_intro": {
+    "message": "LocalView wijzigt taal en regio alleen in de producten die je selecteert."
+  },
+  "status_preset_saved": {
+    "message": "Keuze opgeslagen."
+  },
+  "options_about_title": {
+    "message": "Over"
+  },
+  "options_privacy": {
+    "message": "LocalView wijzigt alleen de taal- en regio-instellingen die Google in je browser gebruikt. Je IP-adres en locatie worden niet gewijzigd. Er worden geen gegevens verzameld, opgeslagen of naar een server verzonden. Je instellingen worden opgeslagen met Chrome-synchronisatie."
+  },
+  "options_version": {
+    "message": "Versie $VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "ext_description": {
+    "message": "Kies de taal en regio die Google moet gebruiken."
+  },
+  "link_settings": {
+    "message": "Instellingen"
+  },
+  "options_presets_title": {
+    "message": "Opgeslagen keuzes"
+  },
+  "options_presets_empty": {
+    "message": "Nog geen opgeslagen keuzes."
+  },
+  "button_delete": {
+    "message": "Verwijderen"
+  },
+  "label_preset_name": {
+    "message": "Naam van keuze"
+  },
+  "validation_preset_name": {
+    "message": "Voer een naam voor de keuze in."
+  },
+  "validation_preset_name_duplicate": {
+    "message": "Er bestaat al een keuze met de naam ‘$1’."
+  },
+  "status_preset_deleted": {
+    "message": "Keuze verwijderd."
+  },
+  "product_search": {
+    "message": "Google Zoeken"
+  },
+  "product_maps": {
+    "message": "Google Maps"
+  },
+  "product_images": {
+    "message": "Google Afbeeldingen"
+  },
+  "product_news": {
+    "message": "Google Nieuws"
+  },
+  "product_shopping": {
+    "message": "Google Shopping"
+  },
+  "product_videos": {
+    "message": "Google Video’s"
+  },
+  "product_books": {
+    "message": "Google Boeken"
+  },
+  "product_flights": {
+    "message": "Google Vluchten"
+  },
+  "product_hotels": {
+    "message": "Google Hotels"
+  },
+  "hint_interface_language": {
+    "message": "Taal van de menu’s en knoppen van Google"
+  },
+  "hint_results_language": {
+    "message": "Toont alleen pagina’s in deze taal"
+  },
+  "hint_region": {
+    "message": "Land waarvan resultaten en prijzen voorrang krijgen"
+  },
+  "button_save": {
+    "message": "Opslaan"
+  },
+  "button_cancel": {
+    "message": "Annuleren"
+  },
+  "button_rename": {
+    "message": "Naam wijzigen"
+  },
+  "options_presets_intro": {
+    "message": "Sla een keuze op in de pop-up met de bladwijzerknop. Die verschijnt daar dan als knop met één klik."
+  },
+  "group_suggested": {
+    "message": "Suggesties"
+  },
+  "group_all": {
+    "message": "Alle"
+  },
+  "button_remove": {
+    "message": "Verwijderen"
+  },
+  "scope_everywhere": {
+    "message": "Overal"
+  },
+  "scope_just": {
+    "message": "Alleen $1"
+  },
+  "option_same": {
+    "message": "Zoals overal"
+  },
+  "button_use_same": {
+    "message": "Zoals overal gebruiken"
+  },
+  "own_line": {
+    "message": "$1 heeft eigen instellingen: $2"
+  },
+  "own_note": {
+    "message": "Eigen instellingen: $1"
+  },
+  "status_saved_for": {
+    "message": "Opgeslagen voor $1."
+  },
+  "status_same_again": {
+    "message": "$1 gebruikt nu weer dezelfde instellingen als overal."
+  },
+  "options_product_settings_title": {
+    "message": "Productinstellingen"
+  },
+  "options_product_settings_intro": {
+    "message": "Deze producten gebruiken een eigen taal of regio. Als je er een wilt toevoegen, open je de pop-up op dat product en kies je ‘Alleen Maps’ (of de naam van het product)."
+  },
+  "validation_preset_limit": {
+    "message": "Je kunt tot 30 keuzes opslaan. Verwijder er een om een nieuwe toe te voegen."
+  },
+  "about_disclaimer": {
+    "message": "Niet gelieerd aan Google. Google is een handelsmerk van Google LLC."
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "ext_name": {
+    "message": "LocalView for Google™"
+  },
+  "action_title": {
+    "message": "LocalView"
+  },
+  "option_default": {
+    "message": "Google 默认"
+  },
+  "label_interface_language": {
+    "message": "显示语言"
+  },
+  "label_results_language": {
+    "message": "结果语言"
+  },
+  "label_region": {
+    "message": "地区"
+  },
+  "button_apply": {
+    "message": "应用"
+  },
+  "button_reset": {
+    "message": "重置"
+  },
+  "status_reloading": {
+    "message": "已应用。正在重新加载…"
+  },
+  "status_applied": {
+    "message": "已应用。"
+  },
+  "status_reset": {
+    "message": "已恢复为 Google 默认设置。"
+  },
+  "status_failed": {
+    "message": "无法保存您的设置。"
+  },
+  "status_saved": {
+    "message": "已保存。"
+  },
+  "options_products_title": {
+    "message": "产品"
+  },
+  "options_products_intro": {
+    "message": "LocalView 仅在您选择的产品中更改语言和地区。"
+  },
+  "status_preset_saved": {
+    "message": "选择已保存。"
+  },
+  "options_about_title": {
+    "message": "关于"
+  },
+  "options_privacy": {
+    "message": "LocalView 只会更改 Google 在您浏览器中使用的语言和地区设置。它不会更改您的 IP 地址或位置。它不会收集、存储任何数据，也不会将数据发送到服务器。您的设置通过 Chrome 同步保存。"
+  },
+  "options_version": {
+    "message": "版本 $VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "ext_description": {
+    "message": "选择 Google 使用的语言和地区。"
+  },
+  "link_settings": {
+    "message": "设置"
+  },
+  "options_presets_title": {
+    "message": "已保存的选择"
+  },
+  "options_presets_empty": {
+    "message": "还没有已保存的选择。"
+  },
+  "button_delete": {
+    "message": "删除"
+  },
+  "label_preset_name": {
+    "message": "选择名称"
+  },
+  "validation_preset_name": {
+    "message": "请输入选择名称。"
+  },
+  "validation_preset_name_duplicate": {
+    "message": "名为“$1”的选择已存在。"
+  },
+  "status_preset_deleted": {
+    "message": "选择已删除。"
+  },
+  "product_search": {
+    "message": "Google 搜索"
+  },
+  "product_maps": {
+    "message": "Google 地图"
+  },
+  "product_images": {
+    "message": "Google 图片"
+  },
+  "product_news": {
+    "message": "Google 新闻"
+  },
+  "product_shopping": {
+    "message": "Google 购物"
+  },
+  "product_videos": {
+    "message": "Google 视频"
+  },
+  "product_books": {
+    "message": "Google 图书"
+  },
+  "product_flights": {
+    "message": "Google 航班"
+  },
+  "product_hotels": {
+    "message": "Google 酒店"
+  },
+  "hint_interface_language": {
+    "message": "Google 菜单和按钮的语言"
+  },
+  "hint_results_language": {
+    "message": "仅显示用此语言撰写的网页"
+  },
+  "hint_region": {
+    "message": "优先显示该国家/地区的结果和价格"
+  },
+  "button_save": {
+    "message": "保存"
+  },
+  "button_cancel": {
+    "message": "取消"
+  },
+  "button_rename": {
+    "message": "重命名"
+  },
+  "options_presets_intro": {
+    "message": "在弹出式窗口中使用书签按钮保存选择。保存后，它会以一键按钮的形式显示在弹出式窗口中。"
+  },
+  "group_suggested": {
+    "message": "推荐"
+  },
+  "group_all": {
+    "message": "全部"
+  },
+  "button_remove": {
+    "message": "移除"
+  },
+  "scope_everywhere": {
+    "message": "全局"
+  },
+  "scope_just": {
+    "message": "仅$1"
+  },
+  "option_same": {
+    "message": "与全局相同"
+  },
+  "button_use_same": {
+    "message": "使用全局设置"
+  },
+  "own_line": {
+    "message": "$1使用单独设置：$2"
+  },
+  "own_note": {
+    "message": "单独设置：$1"
+  },
+  "status_saved_for": {
+    "message": "已为$1保存。"
+  },
+  "status_same_again": {
+    "message": "$1现已改用全局设置。"
+  },
+  "options_product_settings_title": {
+    "message": "产品单独设置"
+  },
+  "options_product_settings_intro": {
+    "message": "这些产品使用单独的语言或地区。如需添加，请在该产品页面上打开弹出式窗口，然后选择“仅地图”（或相应产品名称）。"
+  },
+  "validation_preset_limit": {
+    "message": "最多可保存 30 个选择。请删除一个后再添加。"
+  },
+  "about_disclaimer": {
+    "message": "与 Google 无关联。Google 是 Google LLC 的商标。"
+  }
+}

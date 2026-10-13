@@ -1,0 +1,184 @@
+{
+  "ext_name": {
+    "message": "LocalView for Google™"
+  },
+  "action_title": {
+    "message": "LocalView"
+  },
+  "option_default": {
+    "message": "Google-Standard"
+  },
+  "label_interface_language": {
+    "message": "Anzeigesprache"
+  },
+  "label_results_language": {
+    "message": "Sprache der Ergebnisse"
+  },
+  "label_region": {
+    "message": "Region"
+  },
+  "button_apply": {
+    "message": "Anwenden"
+  },
+  "button_reset": {
+    "message": "Zurücksetzen"
+  },
+  "status_reloading": {
+    "message": "Angewendet. Wird neu geladen…"
+  },
+  "status_applied": {
+    "message": "Angewendet."
+  },
+  "status_reset": {
+    "message": "Auf Google-Standard zurückgesetzt."
+  },
+  "status_failed": {
+    "message": "Einstellungen konnten nicht gespeichert werden."
+  },
+  "status_saved": {
+    "message": "Gespeichert."
+  },
+  "options_products_title": {
+    "message": "Produkte"
+  },
+  "options_products_intro": {
+    "message": "LocalView ändert Sprache und Region nur in den ausgewählten Produkten."
+  },
+  "status_preset_saved": {
+    "message": "Auswahl gespeichert."
+  },
+  "options_about_title": {
+    "message": "Info"
+  },
+  "options_privacy": {
+    "message": "LocalView ändert nur die Sprach- und Regionseinstellungen, die Google in deinem Browser verwendet. Deine IP-Adresse und dein Standort werden nicht geändert. Es werden keine Daten erfasst, gespeichert oder an einen Server gesendet. Deine Einstellungen werden mit der Chrome-Synchronisierung gespeichert."
+  },
+  "options_version": {
+    "message": "Version $VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "ext_description": {
+    "message": "Wähle die Sprache und Region, die Google verwenden soll."
+  },
+  "link_settings": {
+    "message": "Einstellungen"
+  },
+  "options_presets_title": {
+    "message": "Gespeicherte Auswahlen"
+  },
+  "options_presets_empty": {
+    "message": "Noch keine gespeicherten Auswahlen."
+  },
+  "button_delete": {
+    "message": "Löschen"
+  },
+  "label_preset_name": {
+    "message": "Name der Auswahl"
+  },
+  "validation_preset_name": {
+    "message": "Gib einen Namen für die Auswahl ein."
+  },
+  "validation_preset_name_duplicate": {
+    "message": "Eine Auswahl namens „$1“ ist bereits vorhanden."
+  },
+  "status_preset_deleted": {
+    "message": "Auswahl gelöscht."
+  },
+  "product_search": {
+    "message": "Google Suche"
+  },
+  "product_maps": {
+    "message": "Google Maps"
+  },
+  "product_images": {
+    "message": "Google Bilder"
+  },
+  "product_news": {
+    "message": "Google News"
+  },
+  "product_shopping": {
+    "message": "Google Shopping"
+  },
+  "product_videos": {
+    "message": "Google Videos"
+  },
+  "product_books": {
+    "message": "Google Bücher"
+  },
+  "product_flights": {
+    "message": "Google Flüge"
+  },
+  "product_hotels": {
+    "message": "Google Hotels"
+  },
+  "hint_interface_language": {
+    "message": "Sprache der Menüs und Schaltflächen von Google"
+  },
+  "hint_results_language": {
+    "message": "Zeigt nur Seiten in dieser Sprache"
+  },
+  "hint_region": {
+    "message": "Land, dessen Ergebnisse und Preise zuerst kommen"
+  },
+  "button_save": {
+    "message": "Speichern"
+  },
+  "button_cancel": {
+    "message": "Abbrechen"
+  },
+  "button_rename": {
+    "message": "Umbenennen"
+  },
+  "options_presets_intro": {
+    "message": "Speichere eine Auswahl im Pop-up mit der Lesezeichen-Schaltfläche. Sie erscheint dann dort als Schaltfläche für einen Klick."
+  },
+  "group_suggested": {
+    "message": "Vorschläge"
+  },
+  "group_all": {
+    "message": "Alle"
+  },
+  "button_remove": {
+    "message": "Entfernen"
+  },
+  "scope_everywhere": {
+    "message": "Überall"
+  },
+  "scope_just": {
+    "message": "Nur $1"
+  },
+  "option_same": {
+    "message": "Wie überall"
+  },
+  "button_use_same": {
+    "message": "Wie überall verwenden"
+  },
+  "own_line": {
+    "message": "$1 hat eigene Einstellungen: $2"
+  },
+  "own_note": {
+    "message": "Eigene Einstellungen: $1"
+  },
+  "status_saved_for": {
+    "message": "Für $1 gespeichert."
+  },
+  "status_same_again": {
+    "message": "$1 verwendet jetzt wieder dieselben Einstellungen wie überall."
+  },
+  "options_product_settings_title": {
+    "message": "Produkteinstellungen"
+  },
+  "options_product_settings_intro": {
+    "message": "Diese Produkte haben eine eigene Sprache oder Region. Zum Hinzufügen öffne das Pop-up auf dem Produkt und wähle „Nur Maps“ (bzw. den Namen des Produkts)."
+  },
+  "validation_preset_limit": {
+    "message": "Du kannst bis zu 30 Auswahlen speichern. Lösche eine, um eine neue hinzuzufügen."
+  },
+  "about_disclaimer": {
+    "message": "Nicht mit Google verbunden. Google ist eine Marke von Google LLC."
+  }
+}

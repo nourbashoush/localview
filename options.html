@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>LocalView</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="options loading">
+  <div class="stripe" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+  <main class="content reveal">
+    <h1 class="brand"><img src="assets/icon.svg" alt="" draggable="false" width="34" height="34"><span data-i18n="ext_name" dir="ltr">LocalView for Google™</span></h1>
+
+    <section>
+      <h2 class="section-title" data-i18n="options_products_title">Products</h2>
+      <p class="muted" data-i18n="options_products_intro">LocalView changes language and region only on the products you select.</p>
+      <div id="products" class="check-list"></div>
+    </section>
+
+    <section id="own-section" hidden>
+      <h2 class="section-title" data-i18n="options_product_settings_title">Product settings</h2>
+      <p class="muted" data-i18n="options_product_settings_intro">These products use their own language or region. To add one, open the popup on that product and choose “Just Maps” (or that product’s name).</p>
+      <ul id="own-list" class="own-list"></ul>
+    </section>
+
+    <section>
+      <h2 class="section-title" data-i18n="options_presets_title">Saved choices</h2>
+      <p class="muted" data-i18n="options_presets_intro">Save a choice in the popup with the bookmark button. It then appears there as a one-tap button.</p>
+      <div id="presets-empty" class="empty-wrap"><p class="muted" data-i18n="options_presets_empty">No saved choices yet.</p></div>
+      <ul id="presets" class="preset-list"></ul>
+    </section>
+
+    <section>
+      <h2 class="section-title" data-i18n="options_about_title">About</h2>
+      <p data-i18n="options_privacy">LocalView changes only the language and region settings that Google uses in your browser. It does not change your IP address or location. It does not collect, store, or send any data to a server. Your settings are saved with Chrome sync.</p>
+      <p class="muted small" data-i18n="about_disclaimer">Not affiliated with Google. Google is a trademark of Google LLC.</p>
+      <p class="muted" id="version"></p>
+    </section>
+
+  </main>
+
+  <script src="core.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>

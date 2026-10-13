@@ -1,0 +1,184 @@
+{
+  "ext_name": {
+    "message": "LocalView for Google™"
+  },
+  "action_title": {
+    "message": "LocalView"
+  },
+  "option_default": {
+    "message": "Google 기본값"
+  },
+  "label_interface_language": {
+    "message": "표시 언어"
+  },
+  "label_results_language": {
+    "message": "검색 결과 언어"
+  },
+  "label_region": {
+    "message": "지역"
+  },
+  "button_apply": {
+    "message": "적용"
+  },
+  "button_reset": {
+    "message": "재설정"
+  },
+  "status_reloading": {
+    "message": "적용했습니다. 새로고침하는 중…"
+  },
+  "status_applied": {
+    "message": "적용했습니다."
+  },
+  "status_reset": {
+    "message": "Google 기본값으로 재설정했습니다."
+  },
+  "status_failed": {
+    "message": "설정을 저장할 수 없습니다."
+  },
+  "status_saved": {
+    "message": "저장했습니다."
+  },
+  "options_products_title": {
+    "message": "서비스"
+  },
+  "options_products_intro": {
+    "message": "LocalView는 선택한 서비스에서만 언어와 지역을 변경합니다."
+  },
+  "status_preset_saved": {
+    "message": "선택 항목을 저장했습니다."
+  },
+  "options_about_title": {
+    "message": "정보"
+  },
+  "options_privacy": {
+    "message": "LocalView는 브라우저에서 Google이 사용하는 언어 및 지역 설정만 변경합니다. IP 주소나 위치는 변경하지 않습니다. 데이터를 수집, 저장하거나 서버로 전송하지 않습니다. 설정은 Chrome 동기화로 저장됩니다."
+  },
+  "options_version": {
+    "message": "버전 $VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "ext_description": {
+    "message": "Google에서 사용할 언어와 지역을 선택하세요."
+  },
+  "link_settings": {
+    "message": "설정"
+  },
+  "options_presets_title": {
+    "message": "저장된 선택 항목"
+  },
+  "options_presets_empty": {
+    "message": "아직 저장된 선택 항목이 없습니다."
+  },
+  "button_delete": {
+    "message": "삭제"
+  },
+  "label_preset_name": {
+    "message": "선택 항목 이름"
+  },
+  "validation_preset_name": {
+    "message": "선택 항목 이름을 입력하세요."
+  },
+  "validation_preset_name_duplicate": {
+    "message": "'$1' 선택 항목이 이미 있습니다."
+  },
+  "status_preset_deleted": {
+    "message": "선택 항목을 삭제했습니다."
+  },
+  "product_search": {
+    "message": "Google 검색"
+  },
+  "product_maps": {
+    "message": "Google 지도"
+  },
+  "product_images": {
+    "message": "Google 이미지"
+  },
+  "product_news": {
+    "message": "Google 뉴스"
+  },
+  "product_shopping": {
+    "message": "Google 쇼핑"
+  },
+  "product_videos": {
+    "message": "Google 동영상"
+  },
+  "product_books": {
+    "message": "Google 도서"
+  },
+  "product_flights": {
+    "message": "Google 항공편"
+  },
+  "product_hotels": {
+    "message": "Google 호텔"
+  },
+  "hint_interface_language": {
+    "message": "Google 메뉴와 버튼의 언어"
+  },
+  "hint_results_language": {
+    "message": "이 언어로 작성된 페이지만 표시"
+  },
+  "hint_region": {
+    "message": "결과와 가격이 먼저 표시될 국가"
+  },
+  "button_save": {
+    "message": "저장"
+  },
+  "button_cancel": {
+    "message": "취소"
+  },
+  "button_rename": {
+    "message": "이름 바꾸기"
+  },
+  "options_presets_intro": {
+    "message": "팝업의 북마크 버튼으로 선택 항목을 저장하세요. 저장한 항목은 팝업에 원탭 버튼으로 표시됩니다."
+  },
+  "group_suggested": {
+    "message": "추천"
+  },
+  "group_all": {
+    "message": "전체"
+  },
+  "button_remove": {
+    "message": "삭제"
+  },
+  "scope_everywhere": {
+    "message": "전체"
+  },
+  "scope_just": {
+    "message": "$1만"
+  },
+  "option_same": {
+    "message": "전체와 동일"
+  },
+  "button_use_same": {
+    "message": "전체 설정 사용"
+  },
+  "own_line": {
+    "message": "$1에서 별도 설정 사용 중: $2"
+  },
+  "own_note": {
+    "message": "별도 설정: $1"
+  },
+  "status_saved_for": {
+    "message": "$1에 저장했습니다."
+  },
+  "status_same_again": {
+    "message": "이제 $1에서 전체 설정을 사용합니다."
+  },
+  "options_product_settings_title": {
+    "message": "서비스별 설정"
+  },
+  "options_product_settings_intro": {
+    "message": "이 서비스들은 별도의 언어나 지역을 사용합니다. 추가하려면 해당 서비스에서 팝업을 열고 '지도만'(또는 서비스 이름)을 선택하세요."
+  },
+  "validation_preset_limit": {
+    "message": "선택 항목은 최대 30개까지 저장할 수 있습니다. 추가하려면 하나를 삭제하세요."
+  },
+  "about_disclaimer": {
+    "message": "Google과 제휴 관계가 없습니다. Google은 Google LLC의 상표입니다."
+  }
+}

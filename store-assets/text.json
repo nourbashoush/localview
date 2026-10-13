@@ -1,0 +1,314 @@
+{
+  "en": {
+    "presets": [
+      "Japan",
+      "US English",
+      "Deutsch"
+    ],
+    "shots": [
+      [
+        "Choose the language and region Google uses",
+        "Display language, results language and region, without changing your location."
+      ],
+      [
+        "Give one product its own settings",
+        "Maps in Japanese, everything else in English. One switch, right in the popup."
+      ],
+      [
+        "One-tap saved choices, in 12 languages",
+        "Save a combination with the bookmark button and switch with a single tap."
+      ],
+      [
+        "Simple settings. No data collected.",
+        "Turn products on or off and manage your saved choices. Nothing leaves your browser."
+      ]
+    ],
+    "description": "LocalView lets you choose the language and region Google uses, without a VPN and without changing your location.\n\n- Display language: the language of Google's menus and buttons.\n- Results language: show only pages written in one language.\n- Region: the country whose results and prices come first.\n\nWorks on Google Search, Maps, Images, News, Shopping, Videos, Books, Flights and Hotels.\n\n- Saved choices: save a combination and switch with one tap.\n- Just Maps: give one product its own settings, for example Maps in Japanese while everything else stays in English.\n- No reloads or flashes: changes apply as the page loads.\n- 78 display languages, 35 results languages and 245 regions.\n- The interface is available in 12 languages and follows your light or dark theme.\n\nPrivacy: LocalView collects no data. No accounts, no analytics, nothing is sent anywhere. It runs only on Google sites.\n\nGoogle is a trademark of Google LLC. LocalView is not affiliated with or endorsed by Google."
+  },
+  "ar": {
+    "presets": [
+      "اليابان",
+      "US English",
+      "Deutsch"
+    ],
+    "shots": [
+      [
+        "اختر اللغة والمنطقة التي يستخدمها Google",
+        "لغة العرض ولغة النتائج والمنطقة، دون تغيير موقعك."
+      ],
+      [
+        "إعدادات خاصة لمنتج واحد",
+        "خرائط Google باليابانية وكل شيء آخر بالإنجليزية. مفتاح واحد داخل النافذة."
+      ],
+      [
+        "اختيارات محفوظة بنقرة واحدة، بـ 12 لغة",
+        "احفظ مجموعة بزر الإشارة المرجعية وبدّل إليها بنقرة واحدة."
+      ],
+      [
+        "إعدادات بسيطة. لا جمع للبيانات.",
+        "شغّل المنتجات أو أوقفها وأدر اختياراتك المحفوظة. لا شيء يغادر متصفحك."
+      ]
+    ],
+    "description": "يتيح لك LocalView اختيار اللغة والمنطقة التي يستخدمها Google، دون VPN ودون تغيير موقعك.\n\n- لغة العرض: لغة قوائم Google وأزراره.\n- لغة النتائج: عرض الصفحات المكتوبة بلغة واحدة فقط.\n- المنطقة: البلد الذي تظهر نتائجه وأسعاره أولًا.\n\nيعمل على بحث Google وخرائطه وصوره وأخباره والتسوق والفيديو والكتب والرحلات والفنادق.\n\n- الاختيارات المحفوظة: احفظ مجموعة وبدّل إليها بنقرة واحدة.\n- منتج واحد فقط: امنح منتجًا إعداداته الخاصة، مثل الخرائط باليابانية وكل شيء آخر بالإنجليزية.\n- بلا إعادة تحميل أو وميض: تُطبَّق التغييرات أثناء تحميل الصفحة.\n- 78 لغة عرض و35 لغة نتائج و245 منطقة.\n- الواجهة متوفرة بـ 12 لغة وتتبع المظهر الفاتح أو الداكن.\n\nالخصوصية: لا يجمع LocalView أي بيانات. لا حسابات ولا تحليلات ولا يُرسَل أي شيء. يعمل على مواقع Google فقط.\n\nGoogle علامة تجارية لشركة Google LLC. LocalView غير تابع لـ Google ولا تدعمه Google."
+  },
+  "de": {
+    "presets": [
+      "Japan",
+      "US English",
+      "Deutsch"
+    ],
+    "shots": [
+      [
+        "Wähle Sprache und Region für Google",
+        "Anzeigesprache, Ergebnissprache und Region – ohne deinen Standort zu ändern."
+      ],
+      [
+        "Eigene Einstellungen für ein Produkt",
+        "Google Maps auf Japanisch, alles andere auf Englisch. Ein Schalter, direkt im Pop-up."
+      ],
+      [
+        "Gespeicherte Auswahlen mit einem Klick, in 12 Sprachen",
+        "Speichere eine Kombination mit dem Lesezeichen und wechsle mit einem Klick."
+      ],
+      [
+        "Einfache Einstellungen. Keine Datenerfassung.",
+        "Produkte ein- und ausschalten, gespeicherte Auswahlen verwalten. Nichts verlässt deinen Browser."
+      ]
+    ],
+    "description": "Mit LocalView wählst du, welche Sprache und Region Google verwendet – ohne VPN und ohne deinen Standort zu ändern.\n\n- Anzeigesprache: die Sprache der Menüs und Schaltflächen von Google.\n- Ergebnissprache: nur Seiten in einer bestimmten Sprache anzeigen.\n- Region: das Land, dessen Ergebnisse und Preise zuerst erscheinen.\n\nFunktioniert mit Google Suche, Maps, Bilder, News, Shopping, Videos, Books, Flüge und Hotels.\n\n- Gespeicherte Auswahlen: eine Kombination speichern und mit einem Klick wechseln.\n- Nur Maps: einem Produkt eigene Einstellungen geben, z. B. Maps auf Japanisch, alles andere auf Englisch.\n- Kein Neuladen, kein Flackern: Änderungen gelten schon beim Laden der Seite.\n- 78 Anzeigesprachen, 35 Ergebnissprachen und 245 Regionen.\n- Die Oberfläche gibt es in 12 Sprachen, im hellen oder dunklen Design deines Systems.\n\nDatenschutz: LocalView erfasst keine Daten. Keine Konten, keine Analyse, nichts wird gesendet. Es läuft nur auf Google-Websites.\n\nGoogle ist eine Marke von Google LLC. LocalView ist nicht mit Google verbunden und wird nicht von Google unterstützt."
+  },
+  "es": {
+    "presets": [
+      "Japón",
+      "US English",
+      "Deutsch"
+    ],
+    "shots": [
+      [
+        "Elige el idioma y la región que usa Google",
+        "Idioma de visualización, idioma de los resultados y región, sin cambiar tu ubicación."
+      ],
+      [
+        "Configuración propia para un producto",
+        "Maps en japonés y todo lo demás en inglés. Un solo interruptor en la ventana."
+      ],
+      [
+        "Opciones guardadas a un toque, en 12 idiomas",
+        "Guarda una combinación con el marcador y cambia con un solo toque."
+      ],
+      [
+        "Configuración sencilla. Sin recopilar datos.",
+        "Activa o desactiva productos y gestiona tus opciones guardadas. Nada sale de tu navegador."
+      ]
+    ],
+    "description": "LocalView te permite elegir el idioma y la región que usa Google, sin VPN y sin cambiar tu ubicación.\n\n- Idioma de visualización: el idioma de los menús y botones de Google.\n- Idioma de los resultados: muestra solo páginas escritas en un idioma.\n- Región: el país cuyos resultados y precios aparecen primero.\n\nFunciona en Búsqueda de Google, Maps, Imágenes, Noticias, Shopping, Videos, Libros, Vuelos y Hoteles.\n\n- Opciones guardadas: guarda una combinación y cambia con un toque.\n- Solo Maps: da a un producto su propia configuración, por ejemplo Maps en japonés y todo lo demás en inglés.\n- Sin recargas ni parpadeos: los cambios se aplican mientras carga la página.\n- 78 idiomas de visualización, 35 idiomas de resultados y 245 regiones.\n- La interfaz está disponible en 12 idiomas y sigue tu tema claro u oscuro.\n\nPrivacidad: LocalView no recopila datos. Sin cuentas, sin analíticas, no se envía nada. Solo funciona en sitios de Google.\n\nGoogle es una marca de Google LLC. LocalView no está afiliado a Google ni cuenta con su respaldo."
+  },
+  "fr": {
+    "presets": [
+      "Japon",
+      "US English",
+      "Deutsch"
+    ],
+    "shots": [
+      [
+        "Choisissez la langue et la région de Google",
+        "Langue d'affichage, langue des résultats et région, sans changer votre position."
+      ],
+      [
+        "Des paramètres propres à un produit",
+        "Maps en japonais, tout le reste en anglais. Un seul bouton, dans la fenêtre."
+      ],
+      [
+        "Choix enregistrés en un clic, en 12 langues",
+        "Enregistrez une combinaison avec le signet et changez d'un seul clic."
+      ],
+      [
+        "Paramètres simples. Aucune donnée collectée.",
+        "Activez ou désactivez des produits et gérez vos choix. Rien ne quitte votre navigateur."
+      ]
+    ],
+    "description": "LocalView vous permet de choisir la langue et la région utilisées par Google, sans VPN et sans changer votre position.\n\n- Langue d'affichage : la langue des menus et boutons de Google.\n- Langue des résultats : n'afficher que les pages écrites dans une langue.\n- Région : le pays dont les résultats et les prix passent en premier.\n\nFonctionne avec la recherche Google, Maps, Images, Actualités, Shopping, Vidéos, Livres, Vols et Hôtels.\n\n- Choix enregistrés : enregistrez une combinaison et changez en un clic.\n- Maps uniquement : donnez à un produit ses propres paramètres, par exemple Maps en japonais et le reste en anglais.\n- Sans rechargement ni clignotement : les changements s'appliquent pendant le chargement.\n- 78 langues d'affichage, 35 langues de résultats et 245 régions.\n- L'interface existe en 12 langues et suit votre thème clair ou sombre.\n\nConfidentialité : LocalView ne collecte aucune donnée. Pas de compte, pas d'analyse, rien n'est envoyé. Il fonctionne uniquement sur les sites Google.\n\nGoogle est une marque de Google LLC. LocalView n'est ni affilié à Google ni approuvé par Google."
+  },
+  "it": {
+    "presets": [
+      "Giappone",
+      "US English",
+      "Deutsch"
+    ],
+    "shots": [
+      [
+        "Scegli la lingua e la regione di Google",
+        "Lingua di visualizzazione, lingua dei risultati e regione, senza cambiare la tua posizione."
+      ],
+      [
+        "Impostazioni proprie per un prodotto",
+        "Maps in giapponese, tutto il resto in inglese. Un solo interruttore, nel popup."
+      ],
+      [
+        "Scelte salvate con un tocco, in 12 lingue",
+        "Salva una combinazione con il segnalibro e cambia con un solo tocco."
+      ],
+      [
+        "Impostazioni semplici. Nessun dato raccolto.",
+        "Attiva o disattiva i prodotti e gestisci le scelte salvate. Nulla lascia il tuo browser."
+      ]
+    ],
+    "description": "LocalView ti permette di scegliere la lingua e la regione usate da Google, senza VPN e senza cambiare la tua posizione.\n\n- Lingua di visualizzazione: la lingua di menu e pulsanti di Google.\n- Lingua dei risultati: mostra solo pagine scritte in una lingua.\n- Regione: il paese i cui risultati e prezzi vengono prima.\n\nFunziona con Ricerca Google, Maps, Immagini, Notizie, Shopping, Video, Libri, Voli e Hotel.\n\n- Scelte salvate: salva una combinazione e cambia con un tocco.\n- Solo Maps: dai a un prodotto impostazioni proprie, per esempio Maps in giapponese e il resto in inglese.\n- Nessun ricaricamento o sfarfallio: le modifiche valgono già durante il caricamento.\n- 78 lingue di visualizzazione, 35 lingue dei risultati e 245 regioni.\n- L'interfaccia è disponibile in 12 lingue e segue il tema chiaro o scuro.\n\nPrivacy: LocalView non raccoglie dati. Nessun account, nessuna analisi, non viene inviato nulla. Funziona solo sui siti Google.\n\nGoogle è un marchio di Google LLC. LocalView non è affiliato a Google né approvato da Google."
+  },
+  "ja": {
+    "presets": [
+      "日本",
+      "US English",
+      "Deutsch"
+    ],
+    "shots": [
+      [
+        "Google の言語と地域を選ぶ",
+        "表示言語・検索結果の言語・地域を、位置情報を変えずに設定できます。"
+      ],
+      [
+        "サービスごとの個別設定",
+        "マップは日本語、ほかは英語。ポップアップのスイッチひとつで。"
+      ],
+      [
+        "保存した選択をワンタップで。12 言語に対応",
+        "ブックマークボタンで組み合わせを保存し、ワンタップで切り替え。"
+      ],
+      [
+        "シンプルな設定。データ収集なし。",
+        "サービスのオン・オフと保存した選択の管理。データはブラウザの外に出ません。"
+      ]
+    ],
+    "description": "LocalView を使うと、Google が使う言語と地域を選べます。VPN は不要で、位置情報も変わりません。\n\n- 表示言語：Google のメニューやボタンの言語。\n- 検索結果の言語：特定の言語で書かれたページだけを表示。\n- 地域：結果や価格を優先する国。\n\nGoogle 検索、マップ、画像、ニュース、ショッピング、動画、ブックス、フライト、ホテルに対応。\n\n- 保存した選択：組み合わせを保存し、ワンタップで切り替え。\n- マップのみ：サービスごとに個別の設定。たとえばマップは日本語、ほかは英語。\n- 再読み込みやちらつきなし：ページの読み込み時に反映されます。\n- 表示言語 78、検索結果の言語 35、地域 245 に対応。\n- 画面は 12 言語に対応し、ライト・ダークテーマに合わせて表示。\n\nプライバシー：LocalView はデータを一切収集しません。アカウントも分析もなく、何も送信されません。Google のサイトでのみ動作します。\n\nGoogle は Google LLC の商標です。LocalView は Google とは関係がなく、Google の承認を受けたものではありません。"
+  },
+  "ko": {
+    "presets": [
+      "일본",
+      "US English",
+      "Deutsch"
+    ],
+    "shots": [
+      [
+        "Google의 언어와 지역 선택",
+        "위치를 바꾸지 않고 표시 언어, 검색 결과 언어, 지역을 설정하세요."
+      ],
+      [
+        "서비스별 개별 설정",
+        "지도는 일본어로, 나머지는 영어로. 팝업의 스위치 하나면 됩니다."
+      ],
+      [
+        "저장한 선택을 한 번에, 12개 언어 지원",
+        "북마크 버튼으로 조합을 저장하고 한 번 탭해 전환하세요."
+      ],
+      [
+        "간단한 설정. 데이터 수집 없음.",
+        "서비스를 켜고 끄고 저장한 선택을 관리하세요. 데이터는 브라우저 밖으로 나가지 않습니다."
+      ]
+    ],
+    "description": "LocalView로 Google이 사용하는 언어와 지역을 선택하세요. VPN이 필요 없고 위치도 바뀌지 않습니다.\n\n- 표시 언어: Google 메뉴와 버튼의 언어.\n- 검색 결과 언어: 한 언어로 작성된 페이지만 표시.\n- 지역: 결과와 가격을 우선 표시할 국가.\n\nGoogle 검색, 지도, 이미지, 뉴스, 쇼핑, 동영상, 도서, 항공편, 호텔에서 작동합니다.\n\n- 저장한 선택: 조합을 저장하고 한 번 탭해 전환.\n- 지도만: 서비스별로 개별 설정. 예를 들어 지도는 일본어, 나머지는 영어.\n- 새로고침이나 깜빡임 없음: 페이지를 불러올 때 바로 적용됩니다.\n- 표시 언어 78개, 검색 결과 언어 35개, 지역 245개.\n- 인터페이스는 12개 언어를 지원하며 라이트/다크 테마를 따릅니다.\n\n개인정보: LocalView는 데이터를 수집하지 않습니다. 계정도 분석도 없고 아무것도 전송하지 않습니다. Google 사이트에서만 작동합니다.\n\nGoogle은 Google LLC의 상표입니다. LocalView는 Google과 제휴 관계가 없으며 Google의 보증을 받지 않았습니다."
+  },
+  "nl": {
+    "presets": [
+      "Japan",
+      "US English",
+      "Deutsch"
+    ],
+    "shots": [
+      [
+        "Kies de taal en regio die Google gebruikt",
+        "Weergavetaal, taal van resultaten en regio, zonder je locatie te veranderen."
+      ],
+      [
+        "Eigen instellingen voor één product",
+        "Maps in het Japans, al het andere in het Engels. Eén schakelaar in de pop-up."
+      ],
+      [
+        "Opgeslagen keuzes met één tik, in 12 talen",
+        "Sla een combinatie op met de bladwijzer en wissel met één tik."
+      ],
+      [
+        "Eenvoudig. Geen gegevens verzameld.",
+        "Zet producten aan of uit en beheer je keuzes. Niets verlaat je browser."
+      ]
+    ],
+    "description": "Met LocalView kies je welke taal en regio Google gebruikt, zonder VPN en zonder je locatie te veranderen.\n\n- Weergavetaal: de taal van de menu's en knoppen van Google.\n- Taal van resultaten: toon alleen pagina's in één taal.\n- Regio: het land waarvan resultaten en prijzen voorrang krijgen.\n\nWerkt met Google Zoeken, Maps, Afbeeldingen, Nieuws, Shopping, Video's, Boeken, Vluchten en Hotels.\n\n- Opgeslagen keuzes: sla een combinatie op en wissel met één tik.\n- Alleen Maps: geef één product eigen instellingen, bijvoorbeeld Maps in het Japans en de rest in het Engels.\n- Geen herladen of flikkeren: wijzigingen gelden al tijdens het laden.\n- 78 weergavetalen, 35 resultaattalen en 245 regio's.\n- De interface is beschikbaar in 12 talen en volgt je lichte of donkere thema.\n\nPrivacy: LocalView verzamelt geen gegevens. Geen accounts, geen analyse, er wordt niets verzonden. Het werkt alleen op Google-sites.\n\nGoogle is een handelsmerk van Google LLC. LocalView is niet gelieerd aan of goedgekeurd door Google."
+  },
+  "pt": {
+    "presets": [
+      "Japão",
+      "US English",
+      "Deutsch"
+    ],
+    "shots": [
+      [
+        "Escolha o idioma e a região do Google",
+        "Idioma de exibição, idioma dos resultados e região, sem mudar sua localização."
+      ],
+      [
+        "Configurações próprias para um produto",
+        "Maps em japonês, todo o resto em inglês. Um só botão, direto no pop-up."
+      ],
+      [
+        "Escolhas salvas com um toque, em 12 idiomas",
+        "Salve uma combinação com o marcador e troque com um único toque."
+      ],
+      [
+        "Configurações simples. Nenhum dado coletado.",
+        "Ative ou desative produtos e gerencie suas escolhas. Nada sai do seu navegador."
+      ]
+    ],
+    "description": "O LocalView permite escolher o idioma e a região que o Google usa, sem VPN e sem mudar sua localização.\n\n- Idioma de exibição: o idioma dos menus e botões do Google.\n- Idioma dos resultados: mostre só páginas escritas em um idioma.\n- Região: o país cujos resultados e preços aparecem primeiro.\n\nFunciona na Pesquisa Google, Maps, Imagens, Notícias, Shopping, Vídeos, Livros, Voos e Hotéis.\n\n- Escolhas salvas: salve uma combinação e troque com um toque.\n- Só Maps: dê a um produto configurações próprias, por exemplo Maps em japonês e o resto em inglês.\n- Sem recarregar ou piscar: as mudanças valem enquanto a página carrega.\n- 78 idiomas de exibição, 35 idiomas de resultados e 245 regiões.\n- A interface está disponível em 12 idiomas e segue seu tema claro ou escuro.\n\nPrivacidade: o LocalView não coleta dados. Sem contas, sem análises, nada é enviado. Funciona só em sites do Google.\n\nGoogle é uma marca registrada da Google LLC. O LocalView não é afiliado nem endossado pelo Google."
+  },
+  "ru": {
+    "presets": [
+      "Япония",
+      "US English",
+      "Deutsch"
+    ],
+    "shots": [
+      [
+        "Выберите язык и регион для Google",
+        "Язык интерфейса, язык результатов и регион — без смены местоположения."
+      ],
+      [
+        "Свои настройки для одного сервиса",
+        "Карты на японском, всё остальное на английском. Один переключатель в окне расширения."
+      ],
+      [
+        "Сохранённые варианты в одно касание, на 12 языках",
+        "Сохраните сочетание кнопкой закладки и переключайтесь одним касанием."
+      ],
+      [
+        "Простые настройки. Без сбора данных.",
+        "Включайте и отключайте сервисы, управляйте вариантами. Ничего не покидает браузер."
+      ]
+    ],
+    "description": "LocalView позволяет выбрать язык и регион, которые использует Google, — без VPN и без смены местоположения.\n\n- Язык интерфейса: язык меню и кнопок Google.\n- Язык результатов: показывать только страницы на одном языке.\n- Регион: страна, чьи результаты и цены идут первыми.\n\nРаботает в Google Поиске, Картах, Картинках, Новостях, Покупках, Видео, Книгах, Авиабилетах и Отелях.\n\n- Сохранённые варианты: сохраните сочетание и переключайтесь одним касанием.\n- Только Карты: свои настройки для одного сервиса, например Карты на японском, а остальное на английском.\n- Без перезагрузок и мерцания: изменения применяются при загрузке страницы.\n- 78 языков интерфейса, 35 языков результатов и 245 регионов.\n- Интерфейс доступен на 12 языках и следует светлой или тёмной теме.\n\nКонфиденциальность: LocalView не собирает данные. Без аккаунтов, без аналитики, ничего не отправляется. Работает только на сайтах Google.\n\nGoogle — товарный знак Google LLC. LocalView не связан с Google и не одобрен Google."
+  },
+  "zh": {
+    "presets": [
+      "日本",
+      "US English",
+      "Deutsch"
+    ],
+    "shots": [
+      [
+        "选择 Google 使用的语言和地区",
+        "显示语言、结果语言和地区，无需更改您的位置。"
+      ],
+      [
+        "为单个产品单独设置",
+        "地图用日语，其他全部用英语。弹出窗口中一个开关即可。"
+      ],
+      [
+        "一键使用已保存的选择，支持 12 种语言",
+        "用书签按钮保存组合，一键即可切换。"
+      ],
+      [
+        "设置简单。不收集任何数据。",
+        "开启或关闭产品，管理已保存的选择。数据不会离开您的浏览器。"
+      ]
+    ],
+    "description": "LocalView 让您选择 Google 使用的语言和地区，无需 VPN，也不会更改您的位置。\n\n- 显示语言：Google 菜单和按钮的语言。\n- 结果语言：只显示用某种语言撰写的网页。\n- 地区：优先显示该国家/地区的结果和价格。\n\n适用于 Google 搜索、地图、图片、新闻、购物、视频、图书、机票和酒店。\n\n- 已保存的选择：保存组合，一键切换。\n- 仅地图：为单个产品单独设置，例如地图用日语、其他用英语。\n- 无需重新加载，没有闪烁：页面加载时即生效。\n- 78 种显示语言、35 种结果语言和 245 个地区。\n- 界面支持 12 种语言，并跟随浅色或深色主题。\n\n隐私：LocalView 不收集任何数据。没有账号、没有分析，不发送任何内容。仅在 Google 网站上运行。\n\nGoogle 是 Google LLC 的商标。LocalView 与 Google 无关联，也未获得 Google 认可。"
+  }
+}

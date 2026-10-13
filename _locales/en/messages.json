@@ -1,0 +1,184 @@
+{
+  "ext_name": {
+    "message": "LocalView for Google™"
+  },
+  "action_title": {
+    "message": "LocalView"
+  },
+  "option_default": {
+    "message": "Google default"
+  },
+  "label_interface_language": {
+    "message": "Display language"
+  },
+  "label_results_language": {
+    "message": "Results language"
+  },
+  "label_region": {
+    "message": "Region"
+  },
+  "button_apply": {
+    "message": "Apply"
+  },
+  "button_reset": {
+    "message": "Reset"
+  },
+  "status_reloading": {
+    "message": "Applied. Reloading…"
+  },
+  "status_applied": {
+    "message": "Applied."
+  },
+  "status_reset": {
+    "message": "Reset to Google default."
+  },
+  "status_failed": {
+    "message": "Couldn’t save your settings."
+  },
+  "status_saved": {
+    "message": "Saved."
+  },
+  "options_products_title": {
+    "message": "Products"
+  },
+  "options_products_intro": {
+    "message": "LocalView changes language and region only on the products you select."
+  },
+  "status_preset_saved": {
+    "message": "Choice saved."
+  },
+  "options_about_title": {
+    "message": "About"
+  },
+  "options_privacy": {
+    "message": "LocalView changes only the language and region settings that Google uses in your browser. It does not change your IP address or location. It does not collect, store, or send any data to a server. Your settings are saved with Chrome sync."
+  },
+  "options_version": {
+    "message": "Version $VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "ext_description": {
+    "message": "Choose the language and region Google should use."
+  },
+  "link_settings": {
+    "message": "Settings"
+  },
+  "options_presets_title": {
+    "message": "Saved choices"
+  },
+  "options_presets_empty": {
+    "message": "No saved choices yet."
+  },
+  "button_delete": {
+    "message": "Delete"
+  },
+  "label_preset_name": {
+    "message": "Choice name"
+  },
+  "validation_preset_name": {
+    "message": "Enter a choice name."
+  },
+  "validation_preset_name_duplicate": {
+    "message": "A choice named “$1” already exists."
+  },
+  "status_preset_deleted": {
+    "message": "Choice deleted."
+  },
+  "product_search": {
+    "message": "Google Search"
+  },
+  "product_maps": {
+    "message": "Google Maps"
+  },
+  "product_images": {
+    "message": "Google Images"
+  },
+  "product_news": {
+    "message": "Google News"
+  },
+  "product_shopping": {
+    "message": "Google Shopping"
+  },
+  "product_videos": {
+    "message": "Google Videos"
+  },
+  "product_books": {
+    "message": "Google Books"
+  },
+  "product_flights": {
+    "message": "Google Flights"
+  },
+  "product_hotels": {
+    "message": "Google Hotels"
+  },
+  "hint_interface_language": {
+    "message": "Language of Google’s menus and buttons"
+  },
+  "hint_results_language": {
+    "message": "Shows only pages written in this language"
+  },
+  "hint_region": {
+    "message": "Country whose results and prices come first"
+  },
+  "button_save": {
+    "message": "Save"
+  },
+  "button_cancel": {
+    "message": "Cancel"
+  },
+  "button_rename": {
+    "message": "Rename"
+  },
+  "options_presets_intro": {
+    "message": "Save a choice in the popup with the bookmark button. It then appears there as a one-tap button."
+  },
+  "group_suggested": {
+    "message": "Suggested"
+  },
+  "group_all": {
+    "message": "All"
+  },
+  "button_remove": {
+    "message": "Remove"
+  },
+  "scope_everywhere": {
+    "message": "Everywhere"
+  },
+  "scope_just": {
+    "message": "Just $1"
+  },
+  "option_same": {
+    "message": "Same as everywhere"
+  },
+  "button_use_same": {
+    "message": "Use same as everywhere"
+  },
+  "own_line": {
+    "message": "$1 has its own settings: $2"
+  },
+  "own_note": {
+    "message": "Own settings: $1"
+  },
+  "status_saved_for": {
+    "message": "Saved for $1."
+  },
+  "status_same_again": {
+    "message": "$1 now uses the same settings as everywhere."
+  },
+  "options_product_settings_title": {
+    "message": "Product settings"
+  },
+  "options_product_settings_intro": {
+    "message": "These products use their own language or region. To add one, open the popup on that product and choose “Just Maps” (or that product’s name)."
+  },
+  "validation_preset_limit": {
+    "message": "You can save up to 30 choices. Delete one to add another."
+  },
+  "about_disclaimer": {
+    "message": "Not affiliated with Google. Google is a trademark of Google LLC."
+  }
+}

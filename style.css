@@ -1,0 +1,538 @@
+/* Colours follow the LocalView icon. */
+
+/* Baloo Bhaijaan 2 (SIL Open Font License, fonts/OFL.txt), bundled so nothing
+   loads from a server. Vertical space balanced so text sits centred in pills. */
+@font-face {
+  font-family: "Baloo UI";
+  src: url("fonts/BalooBhaijaan2.woff2") format("woff2");
+  font-weight: 400 800;
+  font-display: block;
+  ascent-override: 95%;
+  descent-override: 35%;
+  line-gap-override: 0%;
+}
+
+/* Cyrillic (Russian) from Nunito (OFL, fonts/OFL-Nunito.txt), only when shown. */
+@font-face {
+  font-family: "Nunito Cyrillic";
+  src: url("fonts/Nunito-Cyrillic.woff2") format("woff2");
+  font-weight: 400 800;
+  font-display: block;
+  unicode-range: U+0400-052F, U+2116;
+}
+
+:root {
+  color-scheme: light dark;
+  --blue: #3B7CEC;
+  --red: #E33E2A;
+  --yellow: #F1B500;
+  --green: #2BA24C;
+
+  --bg: #eaf0fb;
+  --ink: #2f3136;
+  --muted: #62666e;
+  --accent: var(--blue);
+  --on-accent: #ffffff;
+  --sheet: #fbfcfe;
+  --track: rgba(0, 0, 0, 0.06);
+  --hover: rgba(0, 0, 0, 0.06);
+  --fill: rgba(0, 0, 0, 0.05);
+  --fill-hover: rgba(0, 0, 0, 0.085);
+  --raised: #ffffff;
+
+  /* Motion: the same kind of movement always has the same speed and feel. */
+  --t-hover: 0.12s;
+  --t-quick: 0.16s;
+  --t-icon: 0.25s;
+  --t-move: 0.3s;
+  --t-pop: 0.4s;
+  --ease-settle: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  --font: "Baloo UI", "Nunito Cyrillic", ui-rounded, -apple-system, system-ui,
+    "PingFang SC", "Hiragino Sans", "Apple SD Gothic Neo", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --blue: #7AA7F7;
+    --red: #F07A6B;
+    --yellow: #F5C84A;
+    --green: #5FC27A;
+    --bg: #1c2029;
+    --ink: #eceef2;
+    --muted: #a2a7b0;
+    --on-accent: #10203f;
+    --sheet: #272a31;
+    --track: rgba(255, 255, 255, 0.08);
+    --hover: rgba(255, 255, 255, 0.1);
+    --fill: rgba(255, 255, 255, 0.07);
+    --fill-hover: rgba(255, 255, 255, 0.11);
+    --raised: rgba(255, 255, 255, 0.16);
+  }
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+[hidden] { display: none !important; }
+
+html { background: var(--bg); }
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 0.9375rem;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+}
+
+button, select, input { font: inherit; color: inherit; }
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+button:focus, select:focus, input:focus { outline: none; }
+button:focus-visible, select:focus-visible, input:focus-visible, a:focus-visible, .check-row input:focus-visible ~ .check {
+  outline: 2px solid color-mix(in srgb, var(--accent) 60%, var(--ink));
+  outline-offset: 2px;
+}
+
+a { color: var(--accent); text-decoration: none; }
+
+/* The icon's four colours as a segmented bar.
+   The chunks grow in from the start when the page opens. */
+.stripe {
+  display: flex;
+  gap: 3px;
+}
+.stripe span {
+  flex: 1;
+  height: 5px;
+  border-radius: 999px;
+  transform-origin: left center;
+  animation: chunk-in var(--t-move) var(--ease-settle) backwards;
+}
+.stripe span:nth-child(1) { background: var(--blue); }
+.stripe span:nth-child(2) { background: var(--red); animation-delay: 40ms; }
+.stripe span:nth-child(3) { background: var(--yellow); animation-delay: 80ms; }
+.stripe span:nth-child(4) { background: var(--green); animation-delay: 120ms; }
+@keyframes chunk-in { from { transform: scaleX(0); opacity: 0; } }
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.brand img { border-radius: 7px; }
+
+/* Rows: label with a small line icon on the reading-start side. */
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0;
+}
+.row .label { display: inline-flex; align-items: center; gap: 0.6875rem; min-width: 0; white-space: nowrap; }
+.row-icon { flex: none; }
+.row-icon.blue { color: var(--blue); }
+.row-icon.red { color: var(--red); }
+.row-icon.green { color: var(--green); }
+
+/* Dropdowns as soft pills with a chevron. */
+.pill-select {
+  appearance: none;
+  -webkit-appearance: none;
+  min-width: 0;
+  max-width: 11rem;
+  height: 2.125rem;
+  padding: 0 1.875rem 0 0.875rem;
+  border: none;
+  border-radius: 999px;
+  background-color: var(--fill);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5' fill='none' stroke='%2362666e' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.625rem center;
+  background-size: 14px;
+  font-size: 0.8125rem;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  transition: background-color var(--t-hover) ease, transform var(--t-hover) ease;
+}
+.pill-select:hover { background-color: var(--fill-hover); }
+.pill-select:active { transform: scale(0.97); }
+.pill-select option { color: #202124; background: #ffffff; }
+
+/* Buttons: pills. */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  height: 2.5rem;
+  padding: 0 1.25rem;
+  border-radius: 999px;
+  background: var(--fill);
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: background var(--t-hover) ease, transform var(--t-icon) var(--ease-spring), filter var(--t-hover) ease;
+}
+.pill:hover { background: var(--fill-hover); }
+.pill:active { transform: scale(0.96); }
+.pill.primary { background: var(--accent); color: var(--on-accent); }
+.pill.primary:hover { filter: brightness(1.07); }
+.pill.small { height: 2rem; padding: 0 0.875rem; font-size: 0.8125rem; }
+.pill.danger { background: transparent; color: var(--red); }
+.pill.danger:hover { background: color-mix(in srgb, var(--red) 12%, transparent); }
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--muted);
+  font-size: 0.8125rem;
+  border-radius: 999px;
+  padding: 0.25rem 0.5rem;
+  margin: -0.25rem -0.5rem;
+  transition: background var(--t-hover) ease, color var(--t-hover) ease;
+}
+.text-link:hover { background: var(--hover); color: var(--ink); }
+
+.muted { color: var(--muted); }
+
+/* Status line: each new message rises in softly. */
+.status { min-height: 1.4em; font-size: 0.8125rem; color: var(--muted); }
+.status.show { animation: soft-in var(--t-move) var(--ease-settle); }
+@keyframes soft-in { from { opacity: 0; transform: translateY(6px); } }
+
+/* Content arrives one part after another. */
+/* Nothing shows until the saved settings are loaded and drawn, so the page
+   never jumps when chips or rows arrive a moment after it opens. */
+body.loading main, body.loading .stripe { visibility: hidden; }
+body.loading .reveal > *, body.loading .stripe span { animation: none; }
+
+.reveal > * { animation: soft-in var(--t-move) var(--ease-settle) backwards; }
+.reveal > :nth-child(2) { animation-delay: 30ms; }
+.reveal > :nth-child(3) { animation-delay: 60ms; }
+.reveal > :nth-child(4) { animation-delay: 90ms; }
+.reveal > :nth-child(5) { animation-delay: 120ms; }
+.reveal > :nth-child(6) { animation-delay: 150ms; }
+.reveal > :nth-child(7) { animation-delay: 180ms; }
+.reveal > :nth-child(8) { animation-delay: 210ms; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+/* ---------- Popup ---------- */
+body.popup { width: 320px; }
+.popup .content { padding: 0.75rem 1.125rem 1rem; }
+.popup .stripe { padding: 0.625rem 1.125rem 0; }
+.popup .brand { margin: 0.25rem 0 0.5rem; }
+.popup .actions { display: flex; gap: 0.5rem; margin-top: 0.75rem; }
+.popup .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+/* ---------- Options ---------- */
+body.options { min-height: 100vh; }
+.options .content { max-width: 34rem; margin: 0 auto; padding: 2rem 1.25rem 3rem; }
+.options .stripe { max-width: 34rem; margin: 0 auto; padding: 1.25rem 1.25rem 0; }
+.options .brand { font-size: 1.375rem; margin: 0.5rem 0 1.25rem; }
+
+/* Cards standing on the page. */
+.options section {
+  background: var(--sheet);
+  border-radius: 22px;
+  padding: 1.125rem 1.375rem 1.25rem;
+  margin-bottom: 0.875rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 4px 18px rgba(30, 50, 90, 0.05);
+}
+.section-title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.25rem;
+}
+.options section > p.muted { font-size: 0.875rem; margin-bottom: 0.5rem; }
+.options section > p + p { margin-top: 0.5rem; }
+
+/* Product rows: rounded highlight on hover, a round check that ticks itself in. */
+.check-list { margin: 0 -0.625rem; }
+.check-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.625rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background var(--t-hover) ease;
+}
+.check-row:hover { background: var(--hover); }
+.check-row input { position: absolute; opacity: 0; pointer-events: none; }
+.check-row .name { transition: opacity var(--t-quick) ease; }
+.check {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: inset 0 0 0 1.5px var(--accent);
+  transition: background var(--t-quick) ease, box-shadow var(--t-quick) ease, transform var(--t-icon) var(--ease-spring);
+}
+.check svg { width: 16px; height: 16px; fill: none; stroke: #fff; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+.check path { stroke-dasharray: 16; stroke-dashoffset: 0; transition: stroke-dashoffset var(--t-icon) ease 0.05s; }
+.check-row:active .check { transform: scale(0.88); }
+.check-row input:not(:checked) + .name { opacity: 0.45; }
+.check-row input:not(:checked) ~ .check { background: transparent; box-shadow: inset 0 0 0 1.5px color-mix(in srgb, var(--muted) 45%, transparent); }
+.check-row input:not(:checked) ~ .check path { stroke-dashoffset: 16; transition-delay: 0s; }
+.check.pop { animation: check-pop var(--t-pop) var(--ease-spring); }
+@keyframes check-pop { 40% { transform: scale(1.25); } }
+
+/* Saved choices: rows collapse smoothly when deleted (grid 1fr -> 0fr). */
+.preset-list { list-style: none; margin: 0.25rem -0.625rem 0.75rem; }
+.preset-list li {
+  display: grid;
+  grid-template-rows: 1fr;
+  transition: grid-template-rows var(--t-move) var(--ease-settle), opacity var(--t-move) var(--ease-settle);
+}
+.preset-list li.gone { grid-template-rows: 0fr; opacity: 0; }
+.preset-list .collapse { min-height: 0; overflow: hidden; }
+.preset-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.625rem;
+  border-radius: 10px;
+  transition: background var(--t-hover) ease;
+}
+.preset-row:hover { background: var(--hover); }
+.preset-row .text { flex: 1; min-width: 0; }
+.preset-row .title { display: block; font-weight: 600; }
+.preset-row .sub { display: block; font-size: 0.75rem; color: var(--muted); line-height: 1.3; }
+
+.save-row { display: flex; gap: 0.5rem; align-items: center; }
+.pill-input {
+  flex: 1;
+  min-width: 0;
+  height: 2.5rem;
+  padding: 0 1rem;
+  border: none;
+  border-radius: 999px;
+  background: var(--fill);
+  font-size: 0.875rem;
+  transition: background var(--t-hover) ease;
+}
+.pill-input:hover, .pill-input:focus { background: var(--fill-hover); }
+.pill-input::placeholder { color: var(--muted); }
+.save-row.shake { animation: shake 0.32s ease; }
+@keyframes shake { 20%, 60% { transform: translateX(-4px); } 40%, 80% { transform: translateX(4px); } }
+
+
+/* Popup rows stack: label above,
+   a full-width pill below, so long names and translations always fit. */
+.popup .row { flex-direction: column; align-items: stretch; gap: 0.3125rem; padding: 0.375rem 0; }
+.popup .row .label { font-size: 0.8125rem; color: var(--muted); gap: 0.5rem; }
+.popup .row-icon { width: 16px; height: 16px; }
+.popup .pill-select { max-width: none; width: 100%; font-size: 0.875rem; }
+.popup .hint { font-size: 0.75rem; color: var(--muted); line-height: 1.3; padding: 0 0.875rem; }
+
+/* Saved choices as one-tap chips at the top of the popup. */
+.chips { display: flex; flex-wrap: wrap; gap: 0.375rem; margin: 0 0 0.375rem; }
+.chip {
+  height: 1.875rem;
+  max-width: 100%;
+  padding: 0 0.875rem;
+  border-radius: 999px;
+  background: var(--fill);
+  font-size: 0.8125rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background var(--t-quick) ease, color var(--t-quick) ease, transform var(--t-icon) var(--ease-spring);
+}
+.chip:hover { background: var(--fill-hover); }
+.chip:active { transform: scale(0.94); }
+.chip.on { background: color-mix(in srgb, var(--accent) 16%, transparent); color: var(--accent); font-weight: 600; }
+.chip.lit { animation: chip-lit var(--t-pop) var(--ease-spring); }
+@keyframes chip-lit { 40% { transform: scale(1.08); } }
+.chip.new { animation: grow-pop var(--t-pop) var(--ease-spring); }
+@keyframes grow-pop { 0% { transform: scale(0); opacity: 0; } 55% { transform: scale(1.12); opacity: 1; } 100% { transform: scale(1); } }
+
+.icon-pill { width: 2.5rem; padding: 0; flex: none; color: var(--yellow); }
+.icon-pill:not([hidden]) { animation: grow-pop var(--t-pop) var(--ease-spring); }
+.popup .save-row { margin-top: 0.625rem; animation: soft-in var(--t-move) var(--ease-settle); }
+.popup .save-row .pill-input { height: 2rem; font-size: 0.8125rem; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.rename-input { height: 2rem; width: 100%; font-weight: 600; }
+.rename-input.shake { animation: shake 0.32s ease; }
+.preset-row .pill.small:disabled { opacity: 0.4; cursor: default; }
+
+.empty-wrap {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition: grid-template-rows var(--t-move) var(--ease-settle), opacity var(--t-move) var(--ease-settle);
+}
+.empty-wrap > p { min-height: 0; overflow: hidden; font-size: 0.875rem; }
+.empty-wrap.open { grid-template-rows: 1fr; opacity: 1; }
+.empty-wrap.still { transition: none; }
+
+/* Popup status fades away after a moment (its space stays, so nothing moves). */
+.status { transition: opacity var(--t-move) ease; }
+.status.gone { opacity: 0; }
+
+/* Options: a short-lived pill in the section's top corner, level with its title. */
+.options section { position: relative; }
+.toast {
+  position: absolute;
+  top: 0.8125rem;
+  right: 1.125rem;
+  max-width: 60%;
+  padding: 0.1875rem 0.75rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--green) 16%, var(--sheet));
+  color: color-mix(in srgb, var(--green) 75%, var(--ink));
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(-4px) scale(0.96);
+  transition: opacity var(--t-quick) ease, transform var(--t-move) var(--ease-settle);
+}
+.toast.error {
+  background: color-mix(in srgb, var(--red) 14%, var(--sheet));
+  color: color-mix(in srgb, var(--red) 80%, var(--ink));
+}
+.toast.show { opacity: 1; transform: none; }
+/* A new message while one is showing: a small bump so the change is noticed. */
+.toast.show.bump { animation: toast-bump var(--t-pop) var(--ease-spring); }
+@keyframes toast-bump { 40% { transform: scale(1.06); } }
+
+/* Selecting and dragging: the interface itself (buttons,
+   chips, labels, icons) can't be selected or dragged, so a slightly long
+   click never paints it blue. Text worth copying stays selectable. */
+body {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+img, svg { -webkit-user-drag: none; user-drag: none; }
+input, .options section > p, .preset-row .title, .preset-row .sub {
+  -webkit-user-select: text;
+  user-select: text;
+}
+/* Selected text in the app's own blue. */
+::selection { background: color-mix(in srgb, var(--accent) 28%, transparent); color: inherit; }
+
+/* Scope switch: Everywhere | Just Maps. */
+.seg {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  margin: 0 0 0.5rem;
+  padding: 3px;
+  border-radius: 999px;
+  background: var(--fill);
+}
+.seg button {
+  flex: 1 1 0;
+  min-width: 0;
+  height: 1.875rem;
+  padding: 0 0.75rem;
+  border-radius: 999px;
+  font-size: 0.8125rem;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: color var(--t-quick) ease;
+}
+.seg button.on { color: var(--ink); font-weight: 600; background: var(--raised); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08); }
+/* One white pill behind the buttons slides to the chosen side. Until it is
+   placed, the chosen button draws its own. */
+.seg::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: var(--pill-w, 0);
+  height: var(--pill-h, 0);
+  transform: translate(var(--pill-x, 0), var(--pill-y, 0));
+  border-radius: 999px;
+  background: var(--raised);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  opacity: 0;
+  transition: transform var(--t-quick) var(--ease-settle), width var(--t-quick) var(--ease-settle);
+}
+.seg.placed::before { opacity: 1; }
+.seg.placed button.on { background: transparent; box-shadow: none; }
+.seg.still::before { transition: none; }
+
+/* Under the switch: "Maps uses its own: …  Remove", or "Own settings: Maps". */
+.scope-note {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin: -0.125rem 0 0.5rem;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+.scope-note strong { color: var(--ink); font-weight: 600; }
+.scope-note .text-link { margin: 0; flex: none; font-size: 0.75rem; }
+.scope-note.show { animation: soft-in var(--t-move) var(--ease-settle); }
+
+/* The dropdowns change over softly when the scope switches. */
+.fields.swap { animation: fields-swap var(--t-move) var(--ease-settle); }
+@keyframes fields-swap { from { opacity: 0.35; transform: translateY(3px); } }
+
+/* Options: products with their own settings. */
+.own-list { list-style: none; margin: 0.25rem -0.625rem 0; }
+.own-list li {
+  display: grid;
+  grid-template-rows: 1fr;
+  transition: grid-template-rows var(--t-move) var(--ease-settle), opacity var(--t-move) var(--ease-settle);
+}
+.own-list li.gone { grid-template-rows: 0fr; opacity: 0; }
+.own-list .collapse { min-height: 0; overflow: hidden; }
+.options section.closing { animation: section-out var(--t-move) var(--ease-settle) forwards; }
+@keyframes section-out { to { opacity: 0; transform: scale(0.98); } }
+/* "Use same as everywhere" stays on one line; when it does not fit next to
+   Apply (long languages), it moves to its own row. */
+.popup .actions { flex-wrap: wrap; }
+.popup .actions .primary { flex: 3 1 5rem; }
+#reset { white-space: nowrap; flex: 1 1 auto; }
+.options p.small { font-size: 0.75rem; }
+
+/* Right-to-left interface (Arabic). */
+[dir="rtl"] .pill-select { padding: 0 0.875rem 0 1.875rem; background-position: left 0.625rem center; }
+[dir="rtl"] .stripe span { transform-origin: right center; }
+[dir="rtl"] .toast { right: auto; left: 1.125rem; }
+
+/* German and other long languages: Apply, Reset and the bookmark share one
+   row by giving up some padding. */
+.popup .actions:has(> #save-open:not([hidden])) { flex-wrap: nowrap; }
+.popup .actions .pill { min-width: 0; padding-inline: 0.875rem; }
+@media (prefers-color-scheme: dark) {
+  .pill-select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5' fill='none' stroke='%23a2a7b0' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); }
+}
+/* Apply never gets squeezed: a long second button moves to its own row. */
+.popup .actions .pill.primary { min-width: 6.5rem; }

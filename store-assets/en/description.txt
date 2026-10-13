@@ -1,0 +1,17 @@
+LocalView lets you choose the language and region Google uses, without a VPN and without changing your location.
+
+- Display language: the language of Google's menus and buttons.
+- Results language: show only pages written in one language.
+- Region: the country whose results and prices come first.
+
+Works on Google Search, Maps, Images, News, Shopping, Videos, Books, Flights and Hotels.
+
+- Saved choices: save a combination and switch with one tap.
+- Just Maps: give one product its own settings, for example Maps in Japanese while everything else stays in English.
+- No reloads or flashes: changes apply as the page loads.
+- 78 display languages, 35 results languages and 245 regions.
+- The interface is available in 12 languages and follows your light or dark theme.
+
+Privacy: LocalView collects no data. No accounts, no analytics, nothing is sent anywhere. It runs only on Google sites.
+
+Google is a trademark of Google LLC. LocalView is not affiliated with or endorsed by Google.

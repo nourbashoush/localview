@@ -1,0 +1,184 @@
+{
+  "ext_name": {
+    "message": "LocalView for Google™"
+  },
+  "action_title": {
+    "message": "LocalView"
+  },
+  "option_default": {
+    "message": "По умолчанию Google"
+  },
+  "label_interface_language": {
+    "message": "Язык интерфейса"
+  },
+  "label_results_language": {
+    "message": "Язык результатов"
+  },
+  "label_region": {
+    "message": "Регион"
+  },
+  "button_apply": {
+    "message": "Применить"
+  },
+  "button_reset": {
+    "message": "Сбросить"
+  },
+  "status_reloading": {
+    "message": "Применено. Перезагрузка…"
+  },
+  "status_applied": {
+    "message": "Применено."
+  },
+  "status_reset": {
+    "message": "Восстановлены настройки Google по умолчанию."
+  },
+  "status_failed": {
+    "message": "Не удалось сохранить настройки."
+  },
+  "status_saved": {
+    "message": "Сохранено."
+  },
+  "options_products_title": {
+    "message": "Сервисы"
+  },
+  "options_products_intro": {
+    "message": "LocalView меняет язык и регион только в выбранных сервисах."
+  },
+  "status_preset_saved": {
+    "message": "Вариант сохранён."
+  },
+  "options_about_title": {
+    "message": "О расширении"
+  },
+  "options_privacy": {
+    "message": "LocalView меняет только настройки языка и региона, которые Google использует в вашем браузере. Расширение не меняет ваш IP-адрес или местоположение. Оно не собирает, не хранит и не отправляет данные на сервер. Настройки сохраняются с помощью синхронизации Chrome."
+  },
+  "options_version": {
+    "message": "Версия $VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "ext_description": {
+    "message": "Выберите язык и регион для Google."
+  },
+  "link_settings": {
+    "message": "Настройки"
+  },
+  "options_presets_title": {
+    "message": "Сохранённые варианты"
+  },
+  "options_presets_empty": {
+    "message": "Сохранённых вариантов пока нет."
+  },
+  "button_delete": {
+    "message": "Удалить"
+  },
+  "label_preset_name": {
+    "message": "Название варианта"
+  },
+  "validation_preset_name": {
+    "message": "Введите название варианта."
+  },
+  "validation_preset_name_duplicate": {
+    "message": "Вариант с названием «$1» уже существует."
+  },
+  "status_preset_deleted": {
+    "message": "Вариант удалён."
+  },
+  "product_search": {
+    "message": "Google Поиск"
+  },
+  "product_maps": {
+    "message": "Google Карты"
+  },
+  "product_images": {
+    "message": "Google Картинки"
+  },
+  "product_news": {
+    "message": "Google Новости"
+  },
+  "product_shopping": {
+    "message": "Google Покупки"
+  },
+  "product_videos": {
+    "message": "Google Видео"
+  },
+  "product_books": {
+    "message": "Google Книги"
+  },
+  "product_flights": {
+    "message": "Google Авиабилеты"
+  },
+  "product_hotels": {
+    "message": "Google Отели"
+  },
+  "hint_interface_language": {
+    "message": "Язык меню и кнопок Google"
+  },
+  "hint_results_language": {
+    "message": "Показывает только страницы на этом языке"
+  },
+  "hint_region": {
+    "message": "Страна, чьи результаты и цены идут первыми"
+  },
+  "button_save": {
+    "message": "Сохранить"
+  },
+  "button_cancel": {
+    "message": "Отмена"
+  },
+  "button_rename": {
+    "message": "Переименовать"
+  },
+  "options_presets_intro": {
+    "message": "Сохраните вариант во всплывающем окне кнопкой закладки. Он появится там как кнопка для быстрого выбора."
+  },
+  "group_suggested": {
+    "message": "Рекомендуемые"
+  },
+  "group_all": {
+    "message": "Все"
+  },
+  "button_remove": {
+    "message": "Удалить"
+  },
+  "scope_everywhere": {
+    "message": "Везде"
+  },
+  "scope_just": {
+    "message": "Только $1"
+  },
+  "option_same": {
+    "message": "Как везде"
+  },
+  "button_use_same": {
+    "message": "Использовать как везде"
+  },
+  "own_line": {
+    "message": "$1 — свои настройки: $2"
+  },
+  "own_note": {
+    "message": "Свои настройки: $1"
+  },
+  "status_saved_for": {
+    "message": "$1: сохранено."
+  },
+  "status_same_again": {
+    "message": "$1: снова настройки как везде."
+  },
+  "options_product_settings_title": {
+    "message": "Настройки сервисов"
+  },
+  "options_product_settings_intro": {
+    "message": "У этих сервисов свой язык или регион. Чтобы добавить сервис, откройте на нём всплывающее окно и выберите «Только Карты» (или название сервиса)."
+  },
+  "validation_preset_limit": {
+    "message": "Можно сохранить до 30 вариантов. Удалите один, чтобы добавить новый."
+  },
+  "about_disclaimer": {
+    "message": "Не связано с Google. Google — товарный знак Google LLC."
+  }
+}

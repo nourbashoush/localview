@@ -1,0 +1,184 @@
+{
+  "ext_name": {
+    "message": "LocalView for Google™"
+  },
+  "action_title": {
+    "message": "LocalView"
+  },
+  "option_default": {
+    "message": "إعداد Google الافتراضي"
+  },
+  "label_interface_language": {
+    "message": "لغة العرض"
+  },
+  "label_results_language": {
+    "message": "لغة النتائج"
+  },
+  "label_region": {
+    "message": "المنطقة"
+  },
+  "button_apply": {
+    "message": "تطبيق"
+  },
+  "button_reset": {
+    "message": "إعادة تعيين"
+  },
+  "status_reloading": {
+    "message": "تم التطبيق. جارٍ إعادة التحميل…"
+  },
+  "status_applied": {
+    "message": "تم التطبيق."
+  },
+  "status_reset": {
+    "message": "تمت الاستعادة إلى إعداد Google الافتراضي."
+  },
+  "status_failed": {
+    "message": "تعذّر حفظ إعداداتك."
+  },
+  "status_saved": {
+    "message": "تم الحفظ."
+  },
+  "options_products_title": {
+    "message": "المنتجات"
+  },
+  "options_products_intro": {
+    "message": "يغيّر LocalView اللغة والمنطقة في المنتجات التي تختارها فقط."
+  },
+  "status_preset_saved": {
+    "message": "تم حفظ الاختيار."
+  },
+  "options_about_title": {
+    "message": "حول"
+  },
+  "options_privacy": {
+    "message": "يغيّر LocalView إعدادات اللغة والمنطقة التي يستخدمها Google في متصفحك فقط. ولا يغيّر عنوان IP أو موقعك. ولا يجمع أي بيانات أو يخزّنها أو يرسلها إلى خادم. تُحفظ إعداداتك باستخدام مزامنة Chrome."
+  },
+  "options_version": {
+    "message": "الإصدار $VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "ext_description": {
+    "message": "اختر اللغة والمنطقة اللتين يستخدمهما Google."
+  },
+  "link_settings": {
+    "message": "الإعدادات"
+  },
+  "options_presets_title": {
+    "message": "الاختيارات المحفوظة"
+  },
+  "options_presets_empty": {
+    "message": "لا توجد اختيارات محفوظة بعد."
+  },
+  "button_delete": {
+    "message": "حذف"
+  },
+  "label_preset_name": {
+    "message": "اسم الاختيار"
+  },
+  "validation_preset_name": {
+    "message": "أدخل اسمًا للاختيار."
+  },
+  "validation_preset_name_duplicate": {
+    "message": "يوجد بالفعل اختيار باسم «$1»."
+  },
+  "status_preset_deleted": {
+    "message": "تم حذف الاختيار."
+  },
+  "product_search": {
+    "message": "Google Search"
+  },
+  "product_maps": {
+    "message": "Google Maps"
+  },
+  "product_images": {
+    "message": "Google Images"
+  },
+  "product_news": {
+    "message": "Google News"
+  },
+  "product_shopping": {
+    "message": "Google Shopping"
+  },
+  "product_videos": {
+    "message": "Google Videos"
+  },
+  "product_books": {
+    "message": "Google Books"
+  },
+  "product_flights": {
+    "message": "Google Flights"
+  },
+  "product_hotels": {
+    "message": "Google Hotels"
+  },
+  "hint_interface_language": {
+    "message": "لغة قوائم Google وأزرارها"
+  },
+  "hint_results_language": {
+    "message": "يعرض الصفحات المكتوبة بهذه اللغة فقط"
+  },
+  "hint_region": {
+    "message": "البلد الذي تظهر نتائجه وأسعاره أولًا"
+  },
+  "button_save": {
+    "message": "حفظ"
+  },
+  "button_cancel": {
+    "message": "إلغاء"
+  },
+  "button_rename": {
+    "message": "إعادة تسمية"
+  },
+  "options_presets_intro": {
+    "message": "احفظ اختيارًا في النافذة المنبثقة باستخدام زر الإشارة المرجعية. سيظهر هناك كزر بنقرة واحدة."
+  },
+  "group_suggested": {
+    "message": "مقترحة"
+  },
+  "group_all": {
+    "message": "الكل"
+  },
+  "button_remove": {
+    "message": "إزالة"
+  },
+  "scope_everywhere": {
+    "message": "في كل مكان"
+  },
+  "scope_just": {
+    "message": "$1 فقط"
+  },
+  "option_same": {
+    "message": "كما في كل مكان"
+  },
+  "button_use_same": {
+    "message": "استخدام نفس الإعدادات"
+  },
+  "own_line": {
+    "message": "يستخدم $1 إعداداته الخاصة: $2"
+  },
+  "own_note": {
+    "message": "إعدادات خاصة: $1"
+  },
+  "status_saved_for": {
+    "message": "تم الحفظ لـ $1."
+  },
+  "status_same_again": {
+    "message": "يستخدم $1 الآن نفس الإعدادات كما في كل مكان."
+  },
+  "options_product_settings_title": {
+    "message": "إعدادات المنتجات"
+  },
+  "options_product_settings_intro": {
+    "message": "تستخدم هذه المنتجات لغتها أو منطقتها الخاصة. لإضافة منتج، افتح النافذة المنبثقة عليه واختر «Maps فقط» (أو اسم ذلك المنتج)."
+  },
+  "validation_preset_limit": {
+    "message": "يمكنك حفظ 30 اختيارًا كحد أقصى. احذف واحدًا لإضافة آخر."
+  },
+  "about_disclaimer": {
+    "message": "غير تابع لـ Google. Google علامة تجارية لشركة Google LLC."
+  }
+}

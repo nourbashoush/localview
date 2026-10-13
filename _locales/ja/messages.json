@@ -1,0 +1,184 @@
+{
+  "ext_name": {
+    "message": "LocalView for Google™"
+  },
+  "action_title": {
+    "message": "LocalView"
+  },
+  "option_default": {
+    "message": "Google のデフォルト"
+  },
+  "label_interface_language": {
+    "message": "表示言語"
+  },
+  "label_results_language": {
+    "message": "検索結果の言語"
+  },
+  "label_region": {
+    "message": "地域"
+  },
+  "button_apply": {
+    "message": "適用"
+  },
+  "button_reset": {
+    "message": "リセット"
+  },
+  "status_reloading": {
+    "message": "適用しました。再読み込みしています…"
+  },
+  "status_applied": {
+    "message": "適用しました。"
+  },
+  "status_reset": {
+    "message": "Google のデフォルトに戻しました。"
+  },
+  "status_failed": {
+    "message": "設定を保存できませんでした。"
+  },
+  "status_saved": {
+    "message": "保存しました。"
+  },
+  "options_products_title": {
+    "message": "サービス"
+  },
+  "options_products_intro": {
+    "message": "LocalView は、選択したサービスでのみ言語と地域を変更します。"
+  },
+  "status_preset_saved": {
+    "message": "選択を保存しました。"
+  },
+  "options_about_title": {
+    "message": "概要"
+  },
+  "options_privacy": {
+    "message": "LocalView は、ブラウザで Google が使用する言語と地域の設定のみを変更します。IP アドレスや位置情報は変更しません。データの収集、保存、サーバーへの送信は一切行いません。設定は Chrome の同期で保存されます。"
+  },
+  "options_version": {
+    "message": "バージョン $VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "ext_description": {
+    "message": "Google で使う言語と地域を選びます。"
+  },
+  "link_settings": {
+    "message": "設定"
+  },
+  "options_presets_title": {
+    "message": "保存した選択"
+  },
+  "options_presets_empty": {
+    "message": "保存した選択はまだありません。"
+  },
+  "button_delete": {
+    "message": "削除"
+  },
+  "label_preset_name": {
+    "message": "選択名"
+  },
+  "validation_preset_name": {
+    "message": "選択名を入力してください。"
+  },
+  "validation_preset_name_duplicate": {
+    "message": "「$1」という名前の選択はすでにあります。"
+  },
+  "status_preset_deleted": {
+    "message": "選択を削除しました。"
+  },
+  "product_search": {
+    "message": "Google 検索"
+  },
+  "product_maps": {
+    "message": "Google マップ"
+  },
+  "product_images": {
+    "message": "Google 画像検索"
+  },
+  "product_news": {
+    "message": "Google ニュース"
+  },
+  "product_shopping": {
+    "message": "Google ショッピング"
+  },
+  "product_videos": {
+    "message": "Google 動画"
+  },
+  "product_books": {
+    "message": "Google ブックス"
+  },
+  "product_flights": {
+    "message": "Google フライト"
+  },
+  "product_hotels": {
+    "message": "Google ホテル"
+  },
+  "hint_interface_language": {
+    "message": "Google のメニューやボタンの言語"
+  },
+  "hint_results_language": {
+    "message": "この言語で書かれたページのみを表示"
+  },
+  "hint_region": {
+    "message": "結果や価格を優先する国"
+  },
+  "button_save": {
+    "message": "保存"
+  },
+  "button_cancel": {
+    "message": "キャンセル"
+  },
+  "button_rename": {
+    "message": "名前を変更"
+  },
+  "options_presets_intro": {
+    "message": "ポップアップのブックマーク ボタンで選択を保存できます。保存した選択は、ポップアップにワンタップのボタンとして表示されます。"
+  },
+  "group_suggested": {
+    "message": "おすすめ"
+  },
+  "group_all": {
+    "message": "すべて"
+  },
+  "button_remove": {
+    "message": "削除"
+  },
+  "scope_everywhere": {
+    "message": "共通"
+  },
+  "scope_just": {
+    "message": "$1のみ"
+  },
+  "option_same": {
+    "message": "共通と同じ"
+  },
+  "button_use_same": {
+    "message": "共通設定を使う"
+  },
+  "own_line": {
+    "message": "$1は個別の設定を使用中：$2"
+  },
+  "own_note": {
+    "message": "個別の設定: $1"
+  },
+  "status_saved_for": {
+    "message": "$1用に保存しました。"
+  },
+  "status_same_again": {
+    "message": "$1は共通設定に戻りました。"
+  },
+  "options_product_settings_title": {
+    "message": "サービスごとの設定"
+  },
+  "options_product_settings_intro": {
+    "message": "これらのサービスは個別の言語や地域を使います。追加するには、そのサービスでポップアップを開き「マップのみ」(またはサービス名)を選びます。"
+  },
+  "validation_preset_limit": {
+    "message": "保存できるのは 30 件までです。追加するには 1 件削除してください。"
+  },
+  "about_disclaimer": {
+    "message": "Google とは関係ありません。Google は Google LLC の商標です。"
+  }
+}

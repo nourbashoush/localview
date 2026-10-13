@@ -1,0 +1,17 @@
+LocalView vous permet de choisir la langue et la région utilisées par Google, sans VPN et sans changer votre position.
+
+- Langue d'affichage : la langue des menus et boutons de Google.
+- Langue des résultats : n'afficher que les pages écrites dans une langue.
+- Région : le pays dont les résultats et les prix passent en premier.
+
+Fonctionne avec la recherche Google, Maps, Images, Actualités, Shopping, Vidéos, Livres, Vols et Hôtels.
+
+- Choix enregistrés : enregistrez une combinaison et changez en un clic.
+- Maps uniquement : donnez à un produit ses propres paramètres, par exemple Maps en japonais et le reste en anglais.
+- Sans rechargement ni clignotement : les changements s'appliquent pendant le chargement.
+- 78 langues d'affichage, 35 langues de résultats et 245 régions.
+- L'interface existe en 12 langues et suit votre thème clair ou sombre.
+
+Confidentialité : LocalView ne collecte aucune donnée. Pas de compte, pas d'analyse, rien n'est envoyé. Il fonctionne uniquement sur les sites Google.
+
+Google est une marque de Google LLC. LocalView n'est ni affilié à Google ni approuvé par Google.
