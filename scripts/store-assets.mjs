@@ -53,7 +53,7 @@ window.chrome = {
   tabs: { query: async () => [{ id: 1, url: "${tabUrl}" }], reload: async () => {} }
 };
 Object.defineProperty(navigator, "languages", { get: () => ["${lang}", "en"] });
-</script><style>:root {${lightVars}}</style>`;
+</script><style>:root {${lightVars}} body.popup { width: auto !important; }</style>`;
   const html = (await readFile(join(ROOT, file), "utf8"))
     .replace("<head>", `<head><base href="file://${ROOT}/">${stub}`);
   const path = join(work, `${file.replace(".html", "")}-${lang}-${Math.random().toString(36).slice(2)}.html`);
@@ -75,7 +75,7 @@ body { margin: 0; width: 1280px; height: 800px; overflow: hidden; box-sizing: bo
 .bar span { flex: 1; height: 7px; border-radius: 9px; }
 h1 { font-size: 52px; line-height: 1.15; margin: 0 0 18px; color: #2f3136; font-weight: 700; text-wrap: balance; word-break: auto-phrase; overflow-wrap: break-word; hyphens: auto; }
 p { font-size: 24px; line-height: 1.45; margin: 0; color: #62666e; text-wrap: pretty; word-break: auto-phrase; }
-.frame { flex: none; width: ${frame.w * frame.scale}px; height: ${frame.h * frame.scale}px; border-radius: 22px; overflow: hidden;
+.frame { flex: none; width: ${BOX.width}px; height: ${BOX.height}px; border-radius: 22px; overflow: hidden;
   background: #eaf0fb; box-shadow: 0 2px 6px rgba(0,0,0,.06), 0 24px 60px rgba(30,50,90,.16); }
 iframe { width: ${frame.w}px; height: ${frame.h}px; border: 0; transform: scale(${frame.scale}); transform-origin: 0 0; }
 [dir="rtl"] iframe { transform-origin: 100% 0; }
@@ -108,7 +108,17 @@ function presets(names) {
 
 const SEARCH = "https://www.google.com/search?q=coffee";
 const MAPS = "https://www.google.com/maps/place/Tokyo";
-const POPUP = { w: 320, h: 520, scale: 1.35 };
+// Every screenshot shows its page in the same box, at the same place, so the
+// four line up when the store shows them side by side. The page is rendered
+// a little wider than in Chrome (popup 400 px, options 600 px) and scaled to
+// fill the box.
+const BOX = { width: 480, height: 720 };
+const POPUP = 400;
+const OPTIONS = 600;
+function frameFor(pageWidth) {
+  const scale = BOX.width / pageWidth;
+  return { w: pageWidth, h: Math.ceil(BOX.height / scale), scale };
+}
 
 async function buildLanguage(lang) {
   const text = TEXT[lang];
@@ -116,18 +126,18 @@ async function buildLanguage(lang) {
   // Screenshot 3 shows the popup in another language: the interface speaks 12.
   const other = lang === "ja" ? "de" : "ja";
   const jobs = [
-    [await extensionPage("popup.html", lang, { ...base, interfaceLanguage: "ja", resultsLanguage: "ja", region: "jp" }, SEARCH), POPUP],
+    [await extensionPage("popup.html", lang, { ...base, interfaceLanguage: "ja", resultsLanguage: "ja", region: "jp" }, SEARCH), frameFor(POPUP)],
     [await extensionPage("popup.html", lang, {
       ...base, interfaceLanguage: "en", resultsLanguage: "en", region: "us",
       productSettings: { maps: { interfaceLanguage: "ja", region: "jp" } }
-    }, MAPS), { ...POPUP, h: 590 }],
+    }, MAPS), frameFor(POPUP)],
     [await extensionPage("popup.html", other, {
       ...base, presets: presets(TEXT[other].presets), interfaceLanguage: "de", resultsLanguage: "de", region: "de"
-    }, SEARCH), POPUP],
+    }, SEARCH), frameFor(POPUP)],
     [await extensionPage("options.html", lang, {
       ...base, interfaceLanguage: "ja", resultsLanguage: "ja", region: "jp",
       products: { books: false }, productSettings: { maps: { interfaceLanguage: "ja", region: "jp" } }
-    }, SEARCH), { w: 706, h: 847, scale: 0.85 }]
+    }, SEARCH), frameFor(OPTIONS)]
   ];
   const dir = join(OUT, lang);
   await mkdir(dir, { recursive: true });

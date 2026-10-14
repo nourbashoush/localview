@@ -3,7 +3,11 @@
 </p>
 
 <p align="center">
-  Choose the language and region Google uses, without a VPN and without changing your location.
+  Choose the language and region Google uses, without changing your location.
+</p>
+
+<p align="center">
+  <a href="https://chromewebstore.google.com/detail/fnlmhiomhplhodcheegkkgahjndhnfpp"><b>Available on the Chrome Web Store</b></a>
 </p>
 
 ![LocalView](store-assets/en/screenshot-1.png)

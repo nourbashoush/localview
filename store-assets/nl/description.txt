@@ -1,17 +1,18 @@
-Met LocalView kies je welke taal en regio Google gebruikt, zonder VPN en zonder je locatie te veranderen.
+Bekijk Google zoals mensen in een ander land het zien.
 
-- Weergavetaal: de taal van de menu's en knoppen van Google.
-- Taal van resultaten: toon alleen pagina's in één taal.
-- Regio: het land waarvan resultaten en prijzen voorrang krijgen.
+Met LocalView kies je de taal waarin Google wordt weergegeven, de taal van je resultaten en het land waar ze vandaan komen. Je echte locatie blijft hetzelfde, en je instellingen gelden zodra een pagina laadt.
 
-Werkt met Google Zoeken, Maps, Afbeeldingen, Nieuws, Shopping, Video's, Boeken, Vluchten en Hotels.
+Zo werkt het
+1. Klik op het LocalView-pictogram in de werkbalk.
+2. Kies een weergavetaal, taal van resultaten en regio.
+3. Klik op Toepassen. Klaar.
 
-- Opgeslagen keuzes: sla een combinatie op en wissel met één tik.
-- Alleen Maps: geef één product eigen instellingen, bijvoorbeeld Maps in het Japans en de rest in het Engels.
-- Geen herladen of flikkeren: wijzigingen gelden al tijdens het laden.
+Functies
+- Opgeslagen keuzes: wissel met één tik tussen combinaties.
+- Alleen Maps: geef één dienst eigen instellingen, zoals Maps in het Japans terwijl Zoeken in het Engels blijft.
 - 78 weergavetalen, 35 resultaattalen en 245 regio's.
-- De interface is beschikbaar in 12 talen en volgt je lichte of donkere thema.
+- Beschikbaar in 12 talen, in lichte en donkere modus.
 
-Privacy: LocalView verzamelt geen gegevens. Geen accounts, geen analyse, er wordt niets verzonden. Het werkt alleen op Google-sites.
+Privacy: LocalView verzamelt geen gegevens en verstuurt niets.
 
 Google is een handelsmerk van Google LLC. LocalView is niet gelieerd aan of goedgekeurd door Google.
