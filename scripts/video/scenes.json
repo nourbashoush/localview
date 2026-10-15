@@ -1,0 +1,134 @@
+{
+  "en": {
+    "story": "An English speaker in Tokyo gets Google in Japanese.",
+    "query": "ramen", "region": "jp", "from": "ja",
+    "tabs": { "from": ["すべて", "画像", "地図", "ニュース"], "to": ["All", "Images", "Maps", "News"] },
+    "count": { "from": "約 1,240,000 件", "to": "About 1,240,000 results" },
+    "results": [
+      { "from": ["tabelog.com", "東京のラーメン 人気店ランキング", "都内で人気のラーメン店を、口コミと評価から紹介。"], "to": ["timeout.com", "The best ramen in Tokyo, ranked", "Tokyo's favourite ramen shops, from reviews and ratings."] },
+      { "from": ["ja.wikipedia.org", "ラーメン - Wikipedia", "中華麺とスープを使った、日本の麺料理。"], "to": ["en.wikipedia.org", "Ramen - Wikipedia", "A Japanese noodle soup, with wheat noodles in a rich broth."] },
+      { "from": ["retty.me", "渋谷 ラーメン おすすめ 10選", "駅から歩いて行ける、地元で人気の店。"], "to": ["tokyocheapo.com", "10 ramen shops near Shibuya Station", "Where the locals go, all within walking distance."] }
+    ]
+  },
+  "ja": {
+    "story": "A Japanese speaker in New York gets Google in English.",
+    "query": "sushi", "region": "us", "from": "en",
+    "tabs": { "from": ["All", "Images", "Maps", "News"], "to": ["すべて", "画像", "地図", "ニュース"] },
+    "count": { "from": "About 2,310,000 results", "to": "約 2,310,000 件" },
+    "results": [
+      { "from": ["theinfatuation.com", "The 25 best sushi restaurants in NYC", "Omakase counters and neighbourhood spots worth the wait."], "to": ["nyjapion.com", "ニューヨークの寿司 おすすめ店 15選", "日本人に人気の店を、エリア別に紹介。"] },
+      { "from": ["en.wikipedia.org", "Sushi - Wikipedia", "A Japanese dish of vinegared rice with seafood."], "to": ["ja.wikipedia.org", "寿司 - Wikipedia", "酢飯と魚介類などを組み合わせた日本料理。"] },
+      { "from": ["yelp.com", "Top 10 sushi near Midtown, Manhattan", "Updated ratings and reviews from local diners."], "to": ["tabelog.com", "ミッドタウンの寿司 人気ランキング", "駅から近い、評価の高い店を一覧で。"] }
+    ]
+  },
+  "ko": {
+    "story": "A Korean speaker in Tokyo gets Google in Japanese.",
+    "query": "shibuya cafe", "region": "jp", "from": "ja",
+    "tabs": { "from": ["すべて", "画像", "地図", "ニュース"], "to": ["전체", "이미지", "지도", "뉴스"] },
+    "count": { "from": "約 3,450,000 件", "to": "검색결과 약 3,450,000개" },
+    "results": [
+      { "from": ["tabelog.com", "渋谷 カフェ 人気店ランキング", "口コミで選ばれた、渋谷のおしゃれなカフェ。"], "to": ["blog.naver.com", "시부야 카페 추천 BEST 10", "도쿄 여행 중 꼭 가 봐야 할 감성 카페 모음."] },
+      { "from": ["ja.wikipedia.org", "渋谷 - Wikipedia", "東京都渋谷区にある繁華街。"], "to": ["ko.wikipedia.org", "시부야 - 위키백과", "도쿄 시부야구에 있는 번화가."] },
+      { "from": ["retty.me", "渋谷で朝から開いているカフェ 15選", "モーニングが楽しめる、駅近の店。"], "to": ["tistory.com", "시부야 아침 일찍 여는 카페", "역에서 가까운 브런치 맛집 정리."] }
+    ]
+  },
+  "zh": {
+    "story": "A Chinese speaker in Osaka gets Google in Japanese.",
+    "query": "osaka food", "region": "jp", "from": "ja",
+    "tabs": { "from": ["すべて", "画像", "地図", "ニュース"], "to": ["全部", "图片", "地图", "新闻"] },
+    "count": { "from": "約 2,780,000 件", "to": "找到约 2,780,000 条结果" },
+    "results": [
+      { "from": ["tabelog.com", "大阪グルメ 人気店ランキング", "たこ焼きからお好み焼きまで、地元の名店。"], "to": ["mafengwo.cn", "大阪美食攻略：必吃的 10 家店", "从章鱼烧到大阪烧，本地人推荐的老店。"] },
+      { "from": ["ja.wikipedia.org", "大阪市 - Wikipedia", "「天下の台所」と呼ばれた食の都。"], "to": ["zh.wikipedia.org", "大阪市 - 维基百科", "被称为“天下厨房”的美食之都。"] },
+      { "from": ["retty.me", "道頓堀 食べ歩き おすすめ 12選", "観光の合間に寄りたい人気の屋台。"], "to": ["xiaohongshu.com", "道顿堀小吃一日游攻略", "边逛边吃，人气小摊全记录。"] }
+    ]
+  },
+  "de": {
+    "story": "A German speaker on holiday in Mallorca gets Google in Spanish.",
+    "query": "mallorca", "region": "es", "from": "es",
+    "tabs": { "from": ["Todo", "Imágenes", "Maps", "Noticias"], "to": ["Alle", "Bilder", "Maps", "News"] },
+    "count": { "from": "Aproximadamente 4.120.000 resultados", "to": "Ungefähr 4.120.000 Ergebnisse" },
+    "results": [
+      { "from": ["elmundo.es", "Las 15 mejores playas de Mallorca", "Calas escondidas y arenales para todos los gustos."], "to": ["merian.de", "Die 15 schönsten Strände auf Mallorca", "Versteckte Buchten und weite Sandstrände."] },
+      { "from": ["es.wikipedia.org", "Mallorca - Wikipedia, la enciclopedia libre", "La mayor isla del archipiélago balear."], "to": ["de.wikipedia.org", "Mallorca – Wikipedia", "Die größte Insel der Balearen."] },
+      { "from": ["lonelyplanet.es", "Qué ver en Mallorca en tres días", "Palma, la Serra de Tramuntana y mucho más."], "to": ["geo.de", "Mallorca in drei Tagen: unsere Tipps", "Palma, die Serra de Tramuntana und mehr."] }
+    ]
+  },
+  "es": {
+    "story": "A Spanish speaker in Los Angeles gets Google in English.",
+    "query": "tacos", "region": "us", "from": "en",
+    "tabs": { "from": ["All", "Images", "Maps", "News"], "to": ["Todo", "Imágenes", "Maps", "Noticias"] },
+    "count": { "from": "About 3,950,000 results", "to": "Aproximadamente 3.950.000 resultados" },
+    "results": [
+      { "from": ["latimes.com", "The best tacos in Los Angeles", "Our critics' picks, from food trucks to taquerías."], "to": ["laopinion.com", "Los mejores tacos de Los Ángeles", "De los food trucks a las taquerías de siempre."] },
+      { "from": ["en.wikipedia.org", "Taco - Wikipedia", "A traditional Mexican dish of a folded tortilla."], "to": ["es.wikipedia.org", "Taco - Wikipedia, la enciclopedia libre", "Platillo tradicional mexicano con tortilla de maíz."] },
+      { "from": ["yelp.com", "Top 10 tacos near Boyle Heights", "Ratings and reviews from people who live nearby."], "to": ["mexicodesconocido.com.mx", "Taquerías imperdibles en Los Ángeles", "Sabor mexicano auténtico al otro lado de la frontera."] }
+    ]
+  },
+  "fr": {
+    "story": "A French speaker in London gets Google in English.",
+    "query": "bakery", "region": "gb", "from": "en",
+    "tabs": { "from": ["All", "Images", "Maps", "News"], "to": ["Tous", "Images", "Maps", "Actualités"] },
+    "count": { "from": "About 1,380,000 results", "to": "Environ 1 380 000 résultats" },
+    "results": [
+      { "from": ["timeout.com", "The 12 best bakeries in London", "Sourdough, pastries and the city's finest croissants."], "to": ["lepetitjournal.com", "Les meilleures boulangeries françaises à Londres", "Pain au levain, viennoiseries et vrais croissants."] },
+      { "from": ["en.wikipedia.org", "Bakery - Wikipedia", "An establishment that produces and sells bread."], "to": ["fr.wikipedia.org", "Boulangerie — Wikipédia", "Commerce où l'on fabrique et vend du pain."] },
+      { "from": ["yelp.co.uk", "Top 10 bakeries near Soho, London", "Updated reviews from local customers."], "to": ["frenchmorning.com", "Où trouver une vraie baguette à Londres", "Nos adresses préférées, quartier par quartier."] }
+    ]
+  },
+  "it": {
+    "story": "An Italian speaker in Munich gets Google in German.",
+    "query": "pizza", "region": "de", "from": "de",
+    "tabs": { "from": ["Alle", "Bilder", "Maps", "News"], "to": ["Tutti", "Immagini", "Maps", "Notizie"] },
+    "count": { "from": "Ungefähr 2.640.000 Ergebnisse", "to": "Circa 2.640.000 risultati" },
+    "results": [
+      { "from": ["mitvergnuegen.com", "Die beste Pizza in München", "Neapolitanisch, römisch oder aus dem Holzofen."], "to": ["gamberorosso.it", "Le migliori pizzerie italiane a Monaco di Baviera", "Napoletana, romana o cotta nel forno a legna."] },
+      { "from": ["de.wikipedia.org", "Pizza – Wikipedia", "Ein Fladenbrot aus der italienischen Küche."], "to": ["it.wikipedia.org", "Pizza - Wikipedia", "Il piatto più famoso della cucina italiana."] },
+      { "from": ["tripadvisor.de", "Pizzerien in der Maxvorstadt", "Bewertungen und Fotos von Gästen."], "to": ["italianiamonaco.de", "Dove mangiare una vera pizza napoletana", "I locali consigliati dagli italiani in città."] }
+    ]
+  },
+  "nl": {
+    "story": "A Dutch speaker camping in Provence gets Google in French.",
+    "query": "camping provence", "region": "fr", "from": "fr",
+    "tabs": { "from": ["Tous", "Images", "Maps", "Actualités"], "to": ["Alle", "Afbeeldingen", "Maps", "Nieuws"] },
+    "count": { "from": "Environ 2 870 000 résultats", "to": "Ongeveer 2.870.000 resultaten" },
+    "results": [
+      { "from": ["routard.com", "Les plus beaux campings de Provence", "Au bord de l'eau, en forêt ou face au mont Ventoux."], "to": ["anwb.nl", "De mooiste campings in de Provence", "Aan het water, in het bos of met zicht op de Mont Ventoux."] },
+      { "from": ["fr.wikipedia.org", "Provence — Wikipédia", "Région historique du sud-est de la France."], "to": ["nl.wikipedia.org", "Provence - Wikipedia", "Historische regio in het zuidoosten van Frankrijk."] },
+      { "from": ["campings.com", "Camping avec piscine en Provence", "Disponibilités et avis des campeurs."], "to": ["zoover.nl", "Kamperen in de Provence: tips en reviews", "Ervaringen van andere Nederlandse kampeerders."] }
+    ]
+  },
+  "pt": {
+    "story": "A Brazilian on a trip to Orlando gets Google in English.",
+    "query": "orlando parks", "region": "us", "from": "en",
+    "tabs": { "from": ["All", "Images", "Maps", "News"], "to": ["Todas", "Imagens", "Maps", "Notícias"] },
+    "count": { "from": "About 5,230,000 results", "to": "Aproximadamente 5.230.000 resultados" },
+    "results": [
+      { "from": ["visitorlando.com", "Orlando theme parks: the complete guide", "Tickets, hours and tips for every park."], "to": ["viajenaviagem.com", "Orlando: guia completo dos parques", "Ingressos, horários e dicas para cada parque."] },
+      { "from": ["en.wikipedia.org", "Orlando, Florida - Wikipedia", "A city in central Florida, known for its theme parks."], "to": ["pt.wikipedia.org", "Orlando – Wikipédia, a enciclopédia livre", "Cidade da Flórida famosa pelos parques temáticos."] },
+      { "from": ["tripadvisor.com", "Things to do in Orlando", "Reviews and photos from travellers."], "to": ["melhoresdestinos.com.br", "Roteiro de 7 dias em Orlando", "Como aproveitar os parques sem gastar demais."] }
+    ]
+  },
+  "ru": {
+    "story": "A Russian speaker on holiday in Antalya gets Google in Turkish.",
+    "query": "antalya", "region": "tr", "from": "tr",
+    "tabs": { "from": ["Tümü", "Görseller", "Haritalar", "Haberler"], "to": ["Все", "Картинки", "Карты", "Новости"] },
+    "count": { "from": "Yaklaşık 3.480.000 sonuç", "to": "Результатов: примерно 3 480 000" },
+    "results": [
+      { "from": ["hurriyet.com.tr", "Antalya'da gezilecek en güzel 20 yer", "Plajlar, antik kentler ve şelaleler."], "to": ["tourister.ru", "Что посмотреть в Анталии: 20 мест", "Пляжи, древние города и водопады."] },
+      { "from": ["tr.wikipedia.org", "Antalya - Vikipedi", "Türkiye'nin Akdeniz kıyısındaki büyük şehir."], "to": ["ru.wikipedia.org", "Анталья — Википедия", "Крупный город на средиземноморском побережье Турции."] },
+      { "from": ["gezimanya.com", "Kaleiçi gezi rehberi", "Tarihi sokaklar, liman ve en iyi kafeler."], "to": ["tonkosti.ru", "Калеичи: путеводитель по старому городу", "Узкие улочки, гавань и лучшие кафе."] }
+    ]
+  },
+  "ar": {
+    "story": "An Arabic speaker studying in London gets Google in English.",
+    "query": "halal restaurants", "region": "gb", "from": "en",
+    "tabs": { "from": ["All", "Images", "Maps", "News"], "to": ["الكل", "الصور", "الخرائط", "الأخبار"] },
+    "count": { "from": "About 1,960,000 results", "to": "حوالى 1,960,000 نتيجة" },
+    "results": [
+      { "from": ["timeout.com", "The best halal restaurants in London", "From Edgware Road grills to new favourites."], "to": ["alaraby.co.uk", "أفضل المطاعم الحلال في لندن", "من مشاوي إدجوير رود إلى أحدث المطاعم."] },
+      { "from": ["en.wikipedia.org", "Halal - Wikipedia", "What is permissible under Islamic law."], "to": ["ar.wikipedia.org", "حلال - ويكيبيديا", "ما يجوز في الشريعة الإسلامية."] },
+      { "from": ["londonist.com", "An Edgware Road food guide", "Where to eat on London's best-known Arab street."], "to": ["sayidaty.net", "دليل مطاعم شارع إدجوير رود", "أين تأكل في أشهر شارع عربي في لندن."] }
+    ]
+  }
+}

@@ -29,6 +29,11 @@ into that language's listing. Regenerate after any text or UI change:
 `node scripts/store-assets.mjs` (or only some: `node scripts/store-assets.mjs de ja`).
 Headlines and descriptions live in `store-assets/text.json`.
 
+Promo videos (1920×1080, 60 fps): `store-assets/<lang>/video.mp4`, made with
+`node scripts/store-video.mjs [lang ...]` (needs Chrome and ffmpeg). Each
+language has its own scene in `scripts/video/scenes.json`. Upload them to
+YouTube (unlisted is fine) and paste the links into each listing's Promo video.
+
 
 - Category: Productivity. Languages: 12, including English (one listing per language).
 - End the description with: "Google is a trademark of Google LLC. LocalView is

@@ -1,0 +1,120 @@
+/* Copied from nour.page (src/components/flows/LocalViewDemo.astro) for the store video. */
+/* LocalView's own colours. It's a picture of the extension, so it stays light in dark mode too. */
+	.demo { --blue: #3b7cec; --red: #e33e2a; --yellow: #f1b500; --green: #2ba24c; --ink: #2f3136; --muted: #62666e; --fill: rgb(0 0 0 / 0.05); margin: 2.5rem 0; container-type: inline-size; }
+	.stage { display: grid; grid-template-columns: minmax(0, 1fr) 15.5rem; align-items: start; font-size: 0.75rem; line-height: 1.35; }
+	svg { fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+
+	/* The browser, with a made-up search page. */
+	.browser { position: relative; overflow: hidden; border-radius: 14px; background: #fff; box-shadow: 0 0 0 1px rgb(0 0 0 / 0.08), 0 12px 30px -14px rgb(0 0 0 / 0.35); color: #202124; font-family: Arial, Helvetica, sans-serif; }
+	@supports (corner-shape: squircle) { .browser { border-radius: 28px; corner-shape: squircle; } }
+	.toolbar { display: flex; align-items: center; gap: 0.75rem; padding: 0.6rem 0.8rem; background: #f1f3f4; }
+	.dots { display: flex; gap: 0.35rem; }
+	.dots i { width: 0.6rem; height: 0.6rem; border-radius: 50%; background: #d5d8dc; }
+	.address { flex: 1; overflow: hidden; padding: 0.3rem 0.8rem; border-radius: 999px; background: #fff; color: #5f6368; font-size: 0.95em; white-space: nowrap; text-overflow: ellipsis; }
+	.extension { flex: none; border-radius: 4px; }
+	.loading { position: absolute; left: 0; top: 2.55rem; width: 100%; height: 2px; background: var(--blue); transform: scaleX(0); transform-origin: left; opacity: 0; }
+	.page { padding: 0.9rem 3.5rem 1.1rem 1rem; }
+	.search { display: flex; justify-content: space-between; align-items: center; padding: 0.5rem 0.9rem; border-radius: 999px; box-shadow: 0 0 0 1px #dfe1e5; font-size: 1.1em; }
+	.search svg { width: 1.1em; color: var(--blue); }
+	.tabs b { margin-right: 1.1em; padding-bottom: 0.35em; color: #5f6368; font-weight: 400; }
+	.tabs b.on { border-bottom: 2px solid var(--blue); color: var(--blue); }
+	.tabs { margin: 0.8rem 0 0.6rem; padding-bottom: 0.35em; border-bottom: 1px solid #ebebeb; }
+	.count { color: #70757a; font-size: 0.9em; }
+	.results { margin-top: 0.5rem; }
+	.results ol { margin: 0; padding: 0; list-style: none; }
+	.results li { display: flex; flex-direction: column; margin: 0 0 0.75rem; }
+	.results li:last-child { margin-bottom: 0; }
+	.results small { color: #4d5156; font-size: 0.85em; }
+	.results b { color: #1a0dab; font-size: 1.2em; font-weight: 400; }
+	.results li > span { color: #4d5156; }
+
+	/* The popup, as LocalView draws it. */
+	.popup { position: relative; z-index: 1; margin: 2.4rem 0 0 -2.5rem; padding: 0.7rem 1rem 1rem; border-radius: 16px; background: #fbfcfe; box-shadow: 0 0 0 1px rgb(0 0 0 / 0.06), 0 18px 40px -12px rgb(0 0 0 / 0.4); color: var(--ink); font-family: ui-rounded, 'SF Pro Rounded', system-ui, sans-serif; }
+	@supports (corner-shape: squircle) { .popup { border-radius: 32px; corner-shape: squircle; } }
+	.stripe { display: flex; gap: 3px; }
+	.stripe span { flex: 1; height: 4px; border-radius: 999px; }
+	.stripe span:nth-child(1) { background: var(--blue); }
+	.stripe span:nth-child(2) { background: var(--red); }
+	.stripe span:nth-child(3) { background: var(--yellow); }
+	.stripe span:nth-child(4) { background: var(--green); }
+	.brand { display: flex; align-items: center; gap: 0.5rem; margin: 0.6rem 0 0.4rem; font-size: 1.2em; font-weight: 600; }
+	.brand img { border-radius: 6px; }
+	.row { display: flex; flex-direction: column; gap: 0.35rem; padding: 0.35rem 0; }
+	.label { display: flex; align-items: center; gap: 0.5rem; }
+	.label svg { width: 1.25em; }
+	.blue { color: var(--blue); } .red { color: var(--red); } .green { color: var(--green); }
+	.select { display: grid; padding: 0.5rem 2rem 0.5rem 0.8rem; border-radius: 999px; background: var(--fill) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5' fill='none' stroke='%2362666e' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 0.7rem center / 12px; }
+	.actions { display: flex; gap: 0.5rem; margin-top: 0.7rem; }
+	.pill { flex: 1; padding: 0.6rem; border-radius: 999px; background: var(--fill); font-weight: 600; text-align: center; }
+	.pill.primary { background: var(--blue); color: #fff; }
+
+	/* The pointer, a classic black arrow, with its tip on the spot it's pointing at. */
+	.cursor { position: absolute; z-index: 2; left: 0; top: 0; width: 1.35rem; margin: -0.1rem 0 0 -0.28rem; pointer-events: none; opacity: 0; }
+	.cursor svg { display: block; fill: #111; stroke: #fff; stroke-width: 1.4; filter: drop-shadow(0 1px 1.5px rgb(0 0 0 / 0.35)); transform-origin: 20% 10%; }
+
+
+	/* Narrow: the page, then the popup under it. */
+	@container (max-width: 34rem) {
+		.stage { grid-template-columns: minmax(0, 1fr); }
+		.page { padding: 0.9rem 1rem 2.2rem; }
+		.popup { margin: -1.2rem 1rem 0; }
+	}
+
+	/* Something that changes: the old and new versions share one spot. Without motion, it shows the new one. */
+	.swap { display: grid; }
+	.swap > * { grid-area: 1 / 1; }
+	.swap > .out { visibility: hidden; }
+
+	/* One 8 second loop, in steps (ms):
+	     0     the pointer comes in
+	     700   Display language is set to English    1500  Results language too
+	     2300  Apply is pressed, and the page reloads in English from 2750
+	     5500  Reset is pressed: the menus go back at once, and the page reloads in Japanese from 5900
+	     6600  the pointer has gone, and it starts again at 8000
+	   Every part runs on the same loop, so its keyframes are those times as a share of it. */
+	@media (prefers-reduced-motion: no-preference) {
+		.demo { --loop: 8s; }
+		.swap > .out { visibility: visible; }
+		.first > .out { animation: lv-first-out var(--loop) infinite; }
+		.first > .in { animation: lv-first-in var(--loop) infinite; }
+		.second > .out { animation: lv-second-out var(--loop) infinite; }
+		.second > .in { animation: lv-second-in var(--loop) infinite; }
+		.first { animation: lv-pick-first var(--loop) ease-out infinite; }
+		.second { animation: lv-pick-second var(--loop) ease-out infinite; }
+		.page .swap > .out { animation: lv-page-out var(--loop) infinite; }
+		.page .swap > .in { animation: lv-page-in var(--loop) infinite; }
+		.page .results > .in { animation: none; }
+		.results > .in li { animation: lv-result-in var(--loop) infinite calc(var(--n) * 90ms) backwards; }
+		.pill.primary { animation: lv-press-apply var(--loop) ease-in-out infinite; }
+		.pill.reset { animation: lv-press-reset var(--loop) ease-in-out infinite; }
+		.loading { animation: lv-load var(--loop) ease-out infinite; }
+		.cursor { animation: lv-point var(--loop) infinite; }
+		.cursor svg { animation: lv-clicks var(--loop) infinite; }
+	}
+	@keyframes lv-first-out { 0%, 8.75% { opacity: 1; transform: none; filter: none; } 11.5%, 71.7% { opacity: 0; transform: translateY(-3px); filter: blur(2px); } 71.75% { opacity: 0; transform: translateY(4px); filter: blur(2px); } 76%, 100% { opacity: 1; transform: none; filter: none; } }
+	@keyframes lv-first-in { 0%, 10.5% { opacity: 0; transform: translateY(4px); filter: blur(2px); } 14.75%, 70% { opacity: 1; transform: none; filter: none; } 72.75%, 100% { opacity: 0; transform: translateY(-3px); filter: blur(2px); } }
+	@keyframes lv-second-out { 0%, 18.75% { opacity: 1; transform: none; filter: none; } 21.5%, 71.7% { opacity: 0; transform: translateY(-3px); filter: blur(2px); } 71.75% { opacity: 0; transform: translateY(4px); filter: blur(2px); } 76%, 100% { opacity: 1; transform: none; filter: none; } }
+	@keyframes lv-second-in { 0%, 20.5% { opacity: 0; transform: translateY(4px); filter: blur(2px); } 24.75%, 70% { opacity: 1; transform: none; filter: none; } 72.75%, 100% { opacity: 0; transform: translateY(-3px); filter: blur(2px); } }
+	@keyframes lv-page-out { 0%, 34.4% { opacity: 1; transform: none; filter: none; } 37.1%, 75.45% { opacity: 0; transform: translateY(-3px); filter: blur(2px); } 75.5% { opacity: 0; transform: translateY(4px); filter: blur(2px); } 79.75%, 100% { opacity: 1; transform: none; filter: none; } }
+	@keyframes lv-page-in { 0%, 36.1% { opacity: 0; transform: translateY(4px); filter: blur(2px); } 40.4%, 73.75% { opacity: 1; transform: none; filter: none; } 76.5%, 100% { opacity: 0; transform: translateY(-3px); filter: blur(2px); } }
+	@keyframes lv-result-in { 0%, 36.25% { opacity: 0; transform: translateY(4px); filter: blur(2px); } 40.75%, 73.75% { opacity: 1; transform: none; filter: none; } 76.5%, 100% { opacity: 0; transform: translateY(-3px); filter: blur(2px); } }
+	@keyframes lv-pick-first { 0%, 5.6%, 14.4%, 68.75%, 75.5%, 100% { background-color: var(--fill); box-shadow: none; } 7.7%, 12.3%, 70.5%, 73.5% { background-color: rgb(59 124 236 / 0.14); box-shadow: 0 0 0 2px var(--blue); } }
+	@keyframes lv-pick-second { 0%, 15.6%, 24.4%, 68.75%, 75.5%, 100% { background-color: var(--fill); box-shadow: none; } 17.7%, 22.3%, 70.5%, 73.5% { background-color: rgb(59 124 236 / 0.14); box-shadow: 0 0 0 2px var(--blue); } }
+	@keyframes lv-press-apply { 0%, 28.75%, 32%, 100% { transform: none; filter: none; } 30.4% { transform: scale(0.94); filter: brightness(0.9); } }
+	@keyframes lv-press-reset { 0%, 68.1%, 71.4%, 100% { transform: none; filter: none; } 69.75% { transform: scale(0.94); filter: brightness(0.9); } }
+	@keyframes lv-load {
+		0%, 30.6% { opacity: 0; transform: scaleX(0); } 30.65% { opacity: 1; transform: scaleX(0); } 36.6% { opacity: 1; transform: scaleX(1); } 37.5% { opacity: 0; transform: scaleX(1); }
+		37.6%, 70% { opacity: 0; transform: scaleX(0); } 70.05% { opacity: 1; transform: scaleX(0); } 76% { opacity: 1; transform: scaleX(1); } 77%, 100% { opacity: 0; transform: scaleX(1); }
+	}
+	@keyframes lv-point {
+		0% { opacity: 0; transform: translate(var(--x0), var(--y0)); }
+		2.5%, 3.75% { opacity: 1; transform: translate(var(--x0), var(--y0)); animation-timing-function: cubic-bezier(0.45, 0, 0.2, 1); }
+		8.1%, 12.5% { opacity: 1; transform: translate(var(--x1), var(--y1)); animation-timing-function: cubic-bezier(0.45, 0, 0.2, 1); }
+		17.25%, 22.5% { opacity: 1; transform: translate(var(--x2), var(--y2)); animation-timing-function: cubic-bezier(0.45, 0, 0.2, 1); }
+		27.25%, 32.75% { opacity: 1; transform: translate(var(--x3), var(--y3)); animation-timing-function: cubic-bezier(0.45, 0, 0.2, 1); }
+		37.5%, 62.5% { opacity: 1; transform: translate(calc(var(--x3) + 22px), calc(var(--y3) + 26px)); animation-timing-function: cubic-bezier(0.45, 0, 0.2, 1); }
+		67.5%, 70.5% { opacity: 1; transform: translate(var(--x4), var(--y4)); animation-timing-function: cubic-bezier(0.45, 0, 0.2, 1); }
+		76% { opacity: 1; transform: translate(calc(var(--x4) + 22px), calc(var(--y4) + 26px)); }
+		81%, 100% { opacity: 0; transform: translate(calc(var(--x4) + 30px), calc(var(--y4) + 34px)); }
+	}
+	@keyframes lv-clicks { 0%, 8.6%, 9.9%, 18.6%, 19.9%, 28.6%, 29.9%, 68.6%, 69.9%, 100% { transform: none; } 9.25%, 19.25%, 29.25%, 69.25% { transform: scale(0.8); } }
